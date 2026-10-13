@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl" xml:lang="pl"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Radosław Górecki">
+
+<title>Sprawozdanie</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<style>html{ scroll-behavior: smooth; }</style>
+
+<script src="index_files/libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="index_files/libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="index_files/libs/datatables-binding-0.34.0/datatables.js"></script>
+<script src="index_files/libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="index_files/libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="index_files/libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="index_files/libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<link href="index_files/libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+<script src="index_files/libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+<script src="index_files/libs/plotly-binding-4.12.1/plotly.js"></script>
+<script src="index_files/libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="index_files/libs/plotly-htmlwidgets-css-2.25.2/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="index_files/libs/plotly-main-2.25.2/plotly-latest.min.js"></script>
+<link href="index_files/libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+<script src="index_files/libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="index_files/libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+<script src="index_files/libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="index_files/libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="index_files/libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+<script src="index_files/libs/leaflet-binding-2.2.3/leaflet.js"></script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Spis treści</h2>
+   
+  <ul class="collapse">
+  <li><a href="#wstęp" id="toc-wstęp" class="nav-link active" data-scroll-target="#wstęp"><span class="header-section-number">1</span> Wstęp</a></li>
+  <li><a href="#zainteresowania" id="toc-zainteresowania" class="nav-link" data-scroll-target="#zainteresowania"><span class="header-section-number">2</span> Zainteresowania</a></li>
+  <li><a href="#zawartość" id="toc-zawartość" class="nav-link" data-scroll-target="#zawartość"><span class="header-section-number">3</span> Zawartość</a>
+  <ul class="collapse">
+  <li><a href="#pozyskanie-danych" id="toc-pozyskanie-danych" class="nav-link" data-scroll-target="#pozyskanie-danych"><span class="header-section-number">3.1</span> Pozyskanie danych</a></li>
+  <li><a href="#opis-danych" id="toc-opis-danych" class="nav-link" data-scroll-target="#opis-danych"><span class="header-section-number">3.2</span> Opis danych</a></li>
+  <li><a href="#przetwarzanie-potokowe-i-interaktywna-tabela" id="toc-przetwarzanie-potokowe-i-interaktywna-tabela" class="nav-link" data-scroll-target="#przetwarzanie-potokowe-i-interaktywna-tabela"><span class="header-section-number">3.3</span> Przetwarzanie Potokowe i interaktywna tabela</a></li>
+  <li><a href="#funkcja" id="toc-funkcja" class="nav-link" data-scroll-target="#funkcja"><span class="header-section-number">3.4</span> Funkcja</a></li>
+  <li><a href="#pętla" id="toc-pętla" class="nav-link" data-scroll-target="#pętla"><span class="header-section-number">3.5</span> Pętla</a></li>
+  <li><a href="#ggplot2" id="toc-ggplot2" class="nav-link" data-scroll-target="#ggplot2"><span class="header-section-number">3.6</span> ggplot2</a></li>
+  <li><a href="#plotly" id="toc-plotly" class="nav-link" data-scroll-target="#plotly"><span class="header-section-number">3.7</span> Plotly</a></li>
+  <li><a href="#interaktywna-mapa" id="toc-interaktywna-mapa" class="nav-link" data-scroll-target="#interaktywna-mapa"><span class="header-section-number">3.8</span> Interaktywna mapa</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">Sprawozdanie</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Kod</button></div></div>
+<p class="subtitle lead">Grupa 1</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Autor</div>
+    <div class="quarto-title-meta-contents">
+             <p>Radosław Górecki </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Opublikowano</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">10 stycznia 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+<div>
+  <div class="abstract">
+    <div class="abstract-title">Streszczenie</div>
+    <span style="font-size: 15px;">W tej pracy prezentuję analizę danych dotyczących średniego ilorazu inteligencji (IQ) mieszkańców różnych krajów na świecie. Dane zostały pozyskane z serwisu Kaggle i zawierają informacje o niektóych czynnikach mogących wpływać na średnie IQ w danym państwie. Przy użyciu języka R i pakietów takich jak m.in. tidyverse, ggplot2, plotly oraz leaflet, przeprowadziłem analizę i wizualizację danych. Opracowane zostały podstawowe oraz interaktywne wykresy. Dodatkowo, przedstawiam stworzoną funkcję obliczającą wskaźnik edukacyjno-ekonomiczny oraz interaktywną mapę z oznaczeniem populacji wybranych krajów. Praca zawiera również wnioski i interpretacje uzyskanych rezultatów.</span>
+  </div>
+</div>
+
+</header>
+
+<section id="wstęp" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Wstęp</h1>
+<p>Witam, nazywam się Radosław Górecki, jestem studentem pierwszego roku z pasją do programowania. Ostatnio zainteresowałem się analizą danych dotyczących średniego ilorazu inteligencji (IQ) mieszkańców różnych krajów. Wykorzystałem dane z Kaggle oraz języka R, aby przeprowadzić analizę i stworzyć interaktywne wizualizacje. Zapraszam do odkrywania wniosków dotyczących czynników wpływających na średni IQ i innych ciekawostek, które udało mi się odkryć w trakcie pracy.</p>
+</section>
+<section id="zainteresowania" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Zainteresowania</h1>
+<p>Od jakiegoś czasu interesuję się programowaniem. Próbowałem sobie programować w różnych językach takich jak: C++, JavaScript, Python, HTML. Jednak najbardziej spodobało mi się prograowanie w Pythonie, dlatego, że można tam pisać bardzo prosty i czytelny kod. Niedawno zainteresowałem się machine learningiem gdzie wydaje mi się użytecznymi językami mogą być python oraz R. Jeszcze nie do końca wybrałem co chcę w życiu robić, narazie testuje sobie różne ścieżki kariery programisty. Tak jak już wyżej pisałem próbowałem sobie pisać w różnych językach, napisałem różne rzeczy takie jak: strony internetowe, grę komputerową, grę internetową, proste aplikacje w konsoli. Teraz na celowniku uczenie maszynowe :)</p>
+</section>
+<section id="zawartość" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Zawartość</h1>
+<div class="cell">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Używane Pakiety</strong></pre>
+</div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(DT)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tibble)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scales)</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<section id="pozyskanie-danych" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="pozyskanie-danych"><span class="header-section-number">3.1</span> Pozyskanie danych</h2>
+<p>Dane zostały pobrane z popularnej strony: <a href="https://www.kaggle.com">www.kaggle.com</a>. Do zaimportowania danych zastosowałem polecenie <code>read_csv()</code>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>dane <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="at">file=</span><span class="st">"dane/avgIQpercountry.csv"</span>)</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Polecenia mogłem używać po wczytaniu biblioteki <code>tidyverse</code>, w której mieszczą się pakiety języka R przeznaczone do nauki o danych.</p>
+</section>
+<section id="opis-danych" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="opis-danych"><span class="header-section-number">3.2</span> Opis danych</h2>
+<p>Zestaw danych nosi nazwę: <strong><em>Average global IQ per country with other stats</em></strong>.</p>
+<p>Zawiera on średnie wyniki IQ (ilorazów inteligencji) mieszkańców danego kraju z uwzględnieniem mających na to wpływ niektórych czynników.</p>
+<p>Możesz pobrać plik z danymi tutaj: <a href="dane/avgIQpercountry.csv">Kliknij</a>.</p>
+<p><strong>Meta Dane:</strong></p>
+<table class="table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 69%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Zmienna</th>
+<th style="text-align: center;">Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Rank</td>
+<td style="text-align: center;">Ranking danego kraju bazujący na średnim IQ</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Country</td>
+<td style="text-align: center;">Nazwa kraju</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Average IQ</td>
+<td style="text-align: center;">Średni wynik IQ</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Continent</td>
+<td style="text-align: center;">Kontynent na którym leży dany kraj</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Literacy Rate</td>
+<td style="text-align: center;">Analfabetyzm (wzór: Literaci/Całkowita populacja)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Nobel Prices</td>
+<td style="text-align: center;">Ilość zdobytych nagród Nobla</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">HDI 2021</td>
+<td style="text-align: center;">Wskaźnik Rozwoju Społecznego w 2021 roku</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Mean years of schoolling - 2021</td>
+<td style="text-align: center;">Średnia liczba lat, w których każdy uczeń uczęszcza do szkoły w 2021 roku</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">GNI - 2021</td>
+<td style="text-align: center;">Indeks Krajowy Brutto w 2021 roku</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Population - 2023</td>
+<td style="text-align: center;">Populacja w danych kraju w 2023 roku</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="przetwarzanie-potokowe-i-interaktywna-tabela" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="przetwarzanie-potokowe-i-interaktywna-tabela"><span class="header-section-number">3.3</span> Przetwarzanie Potokowe i interaktywna tabela</h2>
+<p>Korzystając z możliwości <code>wrappingu</code> wykonalem podsumowanie danych w formie interaktywnej tabeli dla Europy, Azji oraz Afryki. W tym celu m.in stworzyłem nową kolumnę w której zawiera się podział na grupy bazując na średnim ilorazie inteligencji.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Europa</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Azja</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Afryka</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p><strong>Skrypt:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>Europe <span class="ot">&lt;-</span> dane <span class="sc">|&gt;</span> </span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Continent <span class="sc">==</span> <span class="st">"Europe"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Country, <span class="st">`</span><span class="at">Average IQ</span><span class="st">`</span>, <span class="st">`</span><span class="at">Nobel Prices</span><span class="st">`</span>, <span class="st">`</span><span class="at">HDI (2021)</span><span class="st">`</span>) <span class="sc">|&gt;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(  </span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">IQ Classification</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">cut</span>(<span class="st">`</span><span class="at">Average IQ</span><span class="st">`</span>, <span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">80</span>, <span class="dv">90</span>, <span class="dv">100</span>, <span class="sc">+</span><span class="cn">Inf</span>), <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Very Low Average"</span>, <span class="st">"Low Average"</span>, <span class="st">"Average"</span>, <span class="st">"High Average"</span>))</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(<span class="st">`</span><span class="at">IQ Classification</span><span class="st">`</span>) <span class="sc">|&gt;</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">Mean_IQ =</span> <span class="fu">round</span>(<span class="fu">mean</span>(<span class="st">`</span><span class="at">Average IQ</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="dv">2</span>),</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">Total_Nobel_Prizes =</span> <span class="fu">sum</span>(<span class="st">`</span><span class="at">Nobel Prices</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">Mean_HDI =</span> <span class="fu">round</span>(<span class="fu">mean</span>(<span class="st">`</span><span class="at">HDI (2021)</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="dv">2</span>)</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Tabela:</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+
+<div class="datatables html-widget html-fill-item" id="htmlwidget-699a8f52fc5f51015804" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-699a8f52fc5f51015804">{"x":{"filter":"none","vertical":false,"data":[["1","2","3"],["Low Average","Average","High Average"],[86.34999999999999,95.73999999999999,101.01],[7,426,140],[0.8,0.9,0.91]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>IQ Classification<\/th>\n      <th>Mean_IQ<\/th>\n      <th>Total_Nobel_Prizes<\/th>\n      <th>Mean_HDI<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"IQ Classification","targets":1},{"name":"Mean_IQ","targets":2},{"name":"Total_Nobel_Prizes","targets":3},{"name":"Mean_HDI","targets":4}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p><strong>Wnioski:</strong></p>
+<p>Powyższa tabela zawiera klasyfikacje IQ krajów Europy podzieloną na grupy, a także wybrane niektóre czynniki. Można z niej wywnioskowować, że <strong><em>liczba zdobytych nagród Nobla</em></strong> ma mały wpływ na wyniki IQ, natomiast <strong><em>średni wskaźnik rozwoju społecznego</em></strong> ma już dużo większy wpływ.</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p><strong>Skrypt:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>Asia <span class="ot">&lt;-</span> dane <span class="sc">|&gt;</span> </span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Continent <span class="sc">==</span> <span class="st">"Asia"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Country, <span class="st">`</span><span class="at">Average IQ</span><span class="st">`</span>, <span class="st">`</span><span class="at">Nobel Prices</span><span class="st">`</span>, <span class="st">`</span><span class="at">HDI (2021)</span><span class="st">`</span>) <span class="sc">|&gt;</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(  </span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">IQ Classification</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">cut</span>(<span class="st">`</span><span class="at">Average IQ</span><span class="st">`</span>, <span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">80</span>, <span class="dv">90</span>, <span class="dv">100</span>, <span class="sc">+</span><span class="cn">Inf</span>), <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Very Low Average"</span>, <span class="st">"Low Average"</span>, <span class="st">"Average"</span>, <span class="st">"High Average"</span>))</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(<span class="st">`</span><span class="at">IQ Classification</span><span class="st">`</span>) <span class="sc">|&gt;</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">Mean_IQ =</span> <span class="fu">round</span>(<span class="fu">mean</span>(<span class="st">`</span><span class="at">Average IQ</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="dv">2</span>),</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">Total_Nobel_Prizes =</span> <span class="fu">sum</span>(<span class="st">`</span><span class="at">Nobel Prices</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">Mean_HDI =</span> <span class="fu">round</span>(<span class="fu">mean</span>(<span class="st">`</span><span class="at">HDI (2021)</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="dv">2</span>)</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Tabela:</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+
+<div class="datatables html-widget html-fill-item" id="htmlwidget-c701ce7d1a1c504d798f" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-c701ce7d1a1c504d798f">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4"],["Very Low Average","Low Average","Average","High Average"],[73.70999999999999,85.06999999999999,95.5,105.11],[18,5,14,42],[0.68,0.74,0.71,0.9]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>IQ Classification<\/th>\n      <th>Mean_IQ<\/th>\n      <th>Total_Nobel_Prizes<\/th>\n      <th>Mean_HDI<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"IQ Classification","targets":1},{"name":"Mean_IQ","targets":2},{"name":"Total_Nobel_Prizes","targets":3},{"name":"Mean_HDI","targets":4}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p><strong>Wnioski:</strong></p>
+<p>Powyższa tabela zawiera klasyfikacje IQ krajów Azji podzieloną na grupy, a także wybrane niektóre czynniki. Tutaj można postawić inne wnioski niż w poprzedniej tabeli. Widać wyraźnie, że klasyfikacja IQ <em>“Low Average”</em> posiada większy <strong><em>średni wskaźnik rozwoju społecznego</em></strong> niż klasyfikacja <em>“Average”</em>, a więc ten czynnik nie jest decydujący we wpływaniu na ostateczny średni wynik IQ. Natomiast <strong><em>liczba nagród nobla</em></strong> nadal wydaje się nie mieć za dużego wpływu tak samo jak w poprzednim przykładzie.</p>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p><strong>Skrypt:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>Africa <span class="ot">&lt;-</span> dane <span class="sc">|&gt;</span> </span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Continent <span class="sc">==</span> <span class="st">"Africa"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Country, <span class="st">`</span><span class="at">Average IQ</span><span class="st">`</span>, <span class="st">`</span><span class="at">Nobel Prices</span><span class="st">`</span>, <span class="st">`</span><span class="at">HDI (2021)</span><span class="st">`</span>) <span class="sc">|&gt;</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(  </span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">IQ Classification</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">cut</span>(<span class="st">`</span><span class="at">Average IQ</span><span class="st">`</span>, <span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">80</span>, <span class="dv">90</span>, <span class="dv">100</span>, <span class="sc">+</span><span class="cn">Inf</span>), <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Very Low Average"</span>, <span class="st">"Low Average"</span>, <span class="st">"Average"</span>, <span class="st">"High Average"</span>))</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(<span class="st">`</span><span class="at">IQ Classification</span><span class="st">`</span>) <span class="sc">|&gt;</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">Mean_IQ =</span> <span class="fu">round</span>(<span class="fu">mean</span>(<span class="st">`</span><span class="at">Average IQ</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="dv">2</span>),</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">Total_Nobel_Prizes =</span> <span class="fu">sum</span>(<span class="st">`</span><span class="at">Nobel Prices</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">Mean_HDI =</span> <span class="fu">round</span>(<span class="fu">mean</span>(<span class="st">`</span><span class="at">HDI (2021)</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="dv">2</span>)</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Tabela:</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+
+<div class="datatables html-widget html-fill-item" id="htmlwidget-74067e2da2a87a53bdab" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-74067e2da2a87a53bdab">{"x":{"filter":"none","vertical":false,"data":[["1","2"],["Very Low Average","Low Average"],[67.95999999999999,83.73999999999999],[26,0],[0.55,0.76]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>IQ Classification<\/th>\n      <th>Mean_IQ<\/th>\n      <th>Total_Nobel_Prizes<\/th>\n      <th>Mean_HDI<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"IQ Classification","targets":1},{"name":"Mean_IQ","targets":2},{"name":"Total_Nobel_Prizes","targets":3},{"name":"Mean_HDI","targets":4}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p><strong>Wnioski:</strong></p>
+<p>Powyższa tabela zawiera klasyfikacje IQ krajów Afryki podzieloną na grupy, a także wybrane niektóre czynniki. Można z niej wywnioskowować, że <strong><em>liczba zdobytych nagród Nobla</em></strong> ma mały wpływ na wyniki IQ, natomiast <strong><em>średni wskaźnik rozwoju społecznego</em></strong> ma duże znaczenie. Wnioski bardzo podobne jak w przykładzie Europy.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="funkcja" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="funkcja"><span class="header-section-number">3.4</span> Funkcja</h2>
+<p>Napisana funkcja oblicza <strong><em>Wskaźnik Edukacyjno-Ekonomiczny</em></strong>.</p>
+<p><strong>Kod:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>funkcja <span class="ot">&lt;-</span> <span class="cf">function</span>(data, col_schooling, col_GNI, col_literacy){</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  edu_econ_index <span class="ot">&lt;-</span> data[[col_schooling]] <span class="sc">*</span> data[[col_GNI]] <span class="sc">*</span> data[[col_literacy]]</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  data <span class="ot">&lt;-</span> <span class="fu">mutate</span>(data, edu_econ_index)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x=</span>Rank, <span class="at">y=</span>edu_econ_index)) <span class="sc">+</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">fill =</span> <span class="st">"skyblue"</span>) <span class="sc">+</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Wskaźnik Edukacyjno-Ekonomiczny"</span>, <span class="at">x =</span> <span class="st">"Ranking Kraju"</span>, <span class="at">y =</span> <span class="st">"Wskaźnik"</span>) <span class="sc">+</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>()</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(plot)</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>daneT <span class="ot">&lt;-</span> dane <span class="sc">|&gt;</span> <span class="fu">as_tibble</span>()</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">funkcja</span>(daneT, <span class="st">"Mean years of schooling - 2021"</span>, <span class="st">"GNI - 2021"</span>, <span class="st">"Literacy Rate"</span>)</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Rezultat:</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Jak już wyżej napisałem funkcja oblicza Wskaźnik Edukacyjno-Ekonomiczny, wykorzystując wzór: <span class="math display">\[W = x * y * z\]</span></p>
+<p>Gdzie:</p>
+<p>W - Wskaźnik edukacyjno-ekonomiczny</p>
+<p>x - średnia długość nauki</p>
+<p>y - PKB na mieszkańca</p>
+<p>z - wskaźnik piśmienności</p>
+</section>
+<section id="pętla" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="pętla"><span class="header-section-number">3.5</span> Pętla</h2>
+<p>Poniższy kod tworzy 3 przykładowe pliki csv, następnie wczytuje stworzone pliki i łączy je ze sobą w całość jako tibble. W skrypcie została użyta funkcja <code>map_dfr()</code>, zwraca ona ramkę danych stworzoną przez połączenie wierszy.</p>
+<p><strong>Skrypt:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Tworzenie przykładowych 3 plików</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(<span class="fu">data.frame</span>(<span class="at">id =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>), <span class="at">name =</span> <span class="fu">c</span>(<span class="st">"Marek"</span>, <span class="st">"Mateusz"</span>, <span class="st">"Janek"</span>), <span class="at">iq =</span> <span class="fu">sample</span>(<span class="dv">30</span><span class="sc">:</span><span class="dv">200</span>, <span class="dv">3</span>)), <span class="st">"plik1.csv"</span>)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(<span class="fu">data.frame</span>(<span class="at">id =</span> <span class="dv">4</span>, <span class="at">name =</span> <span class="st">"Zbyszek"</span>, <span class="at">iq =</span> <span class="fu">sample</span>(<span class="dv">30</span><span class="sc">:</span><span class="dv">200</span>, <span class="dv">1</span>)), <span class="st">"plik2.csv"</span>)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(<span class="fu">data.frame</span>(<span class="at">id =</span> <span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">6</span>), <span class="at">name =</span> <span class="fu">c</span>(<span class="st">"Piotr"</span>, <span class="st">"Mariusz"</span>), <span class="at">iq =</span> <span class="fu">sample</span>(<span class="dv">30</span><span class="sc">:</span><span class="dv">200</span>, <span class="dv">2</span>)), <span class="st">"plik3.csv"</span>)</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="co"># funckja wczytująca pliki</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>wczytaj_plik <span class="ot">&lt;-</span> <span class="cf">function</span>(sciezka) {</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">read_csv</span>(sciezka) <span class="sc">|&gt;</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">as_tibble</span>()</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="co"># lista plików do wcyztania</span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>pliki <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"plik1.csv"</span>, <span class="st">"plik2.csv"</span>, <span class="st">"plik3.csv"</span>)</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="co"># wczytanie plików do zmiennej wynik</span></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>wynik <span class="ot">&lt;-</span> <span class="fu">map_dfr</span>(pliki[<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>], wczytaj_plik)</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Wyświetlenie wyniku:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>wynik</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 3
+     id name       iq
+  &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt;
+1     1 Marek     108
+2     2 Mateusz    86
+3     3 Janek     191
+4     4 Zbyszek    96
+5     5 Piotr      52
+6     6 Mariusz   155</code></pre>
+</div>
+</div>
+<hr>
+<p>Jak widać został zwrócony obiekt tibble składający się z 3 stworzonych przez nas plików.</p>
+</section>
+<section id="ggplot2" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="ggplot2"><span class="header-section-number">3.6</span> ggplot2</h2>
+<p>W tym podrozdziale zaprezentuję 2 wykresy stworzone przy pomocy biblioteki <code>ggplot2</code> oraz ich interpretację.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Wykres 1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Wykres 2</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p><strong>Kod:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>styl <span class="ot">&lt;-</span> <span class="fu">theme</span>(</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">legend.position =</span> <span class="st">"top"</span>,</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">legend.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"cornsilk1"</span>),</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">hjust =</span> <span class="fl">0.5</span>),</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">hjust =</span> <span class="fl">0.5</span>),</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">plot.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"cornsilk1"</span>, <span class="at">color =</span> <span class="st">"cornsilk4"</span>),</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">panel.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"cornsilk2"</span>),</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">panel.grid.major =</span> <span class="fu">element_line</span>(<span class="at">size =</span> <span class="dv">1</span>)</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>w1 <span class="ot">&lt;-</span> dane <span class="sc">|&gt;</span> <span class="fu">ggplot</span>(<span class="fu">aes</span>(Rank, <span class="st">`</span><span class="at">GNI - 2021</span><span class="st">`</span>, <span class="at">color =</span> Continent)) <span class="sc">+</span></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">position =</span> <span class="fu">position_dodge</span>(<span class="at">width =</span> <span class="fl">0.5</span>), <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Wykres zlezności między rankingiem a GNI"</span>,</span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Wykres 1"</span>,</span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Ranking"</span>,</span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"GNI - 2021"</span></span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a>  styl <span class="sc">+</span></span>
+<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span>comma)</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Wykres</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p><strong>Interpretacja:</strong></p>
+<ul>
+<li>Wykres ten przedstawia punktowe dane, gdzie każdy punkt reprezentuje kraj.</li>
+<li>Punkty są ułożone na osi X zgodnie z reprezentowanym przez nie rankingiem, a na osi Y znajduje się wartość GNI - 2021 (dochód narodowy brutto)</li>
+<li>Możemy zauważyc, czy istnieje jakaś widoczna zależność między rankingiem a GNI dla różnych krajów i kontynentów</li>
+</ul>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p><strong>Kod:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>styl <span class="ot">&lt;-</span> <span class="fu">theme</span>(</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">legend.position =</span> <span class="st">"none"</span>,</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">hjust =</span> <span class="fl">0.5</span>),</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">hjust =</span> <span class="fl">0.5</span>),</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>),</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">panel.grid.major.y =</span> <span class="fu">element_line</span>(</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"gray"</span>,</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">linetype =</span> <span class="st">"dashed"</span>,</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">size =</span> <span class="fl">0.5</span></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">panel.grid.minor.y =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">panel.grid.major.x =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">panel.grid.minor.x =</span> <span class="fu">element_blank</span>()</span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span></span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a>  dane <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="st">`</span><span class="at">Population - 2023</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">as.integer</span>(<span class="st">`</span><span class="at">Population - 2023</span><span class="st">`</span>)) <span class="sc">|&gt;</span> <span class="fu">group_by</span>(Continent) <span class="sc">|&gt;</span> <span class="fu">summarise</span>(<span class="at">liczba =</span> <span class="fu">sum</span>(<span class="st">`</span><span class="at">Population - 2023</span><span class="st">`</span>))</span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>w2 <span class="ot">&lt;-</span></span>
+<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a>  d <span class="sc">|&gt;</span> <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> Continent, <span class="at">y =</span> liczba, <span class="at">fill =</span> Continent)) <span class="sc">+</span></span>
+<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
+<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> liczba), <span class="at">vjust =</span> <span class="sc">-</span><span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">paste0</span>(<span class="fu">round</span>(liczba <span class="sc">/</span> <span class="fu">sum</span>(d<span class="sc">$</span>liczba) <span class="sc">*</span> <span class="dv">100</span>, <span class="dv">1</span>), <span class="st">"%"</span>)), <span class="at">vjust =</span> <span class="fl">1.5</span>) <span class="sc">+</span></span>
+<span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Wykres liczby ludności na kontynentach"</span>,</span>
+<span id="cb12-26"><a href="#cb12-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Wykres 2"</span>,</span>
+<span id="cb12-27"><a href="#cb12-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Kontynenty"</span>,</span>
+<span id="cb12-28"><a href="#cb12-28" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Liczba ludności"</span></span>
+<span id="cb12-29"><a href="#cb12-29" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb12-30"><a href="#cb12-30" aria-hidden="true" tabindex="-1"></a>  styl <span class="sc">+</span></span>
+<span id="cb12-31"><a href="#cb12-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_log10</span>() <span class="sc">+</span></span>
+<span id="cb12-32"><a href="#cb12-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span>comma)</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Wykres:</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p><strong>Interpretacja:</strong></p>
+<ul>
+<li>Wykres ten przedstawia liczbę ludności na każdym z kontynentów w formie kolumn.</li>
+<li>Kolumny są pokolorowane zgodnie z kontynentem, co ułatwia porównywanie między nimi.</li>
+<li>Dodatkowo na każdej kolumnie umieszczono etykiety z liczbą ludności i procentowym udziałem danej populacji w ogólnej liczbie ludności. Dzięki temu można dokladnie zobaczyć wartość reprezentującą ludność na danym kontynencie oraz procent populacji na tle światowym.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="plotly" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="plotly"><span class="header-section-number">3.7</span> Plotly</h2>
+<p>Poniżej znajdują się udoskonalone wykresy które mogliśmy zobaczyć w poprzednim akapcie. Wykresy te posiadają jeszcze większą funkcjonalność oraz są ineraktywne. Do stworzenia tych wykresów zastosowałem bibliotekę <code>plotly</code>, która jest potężnym narzędziem umożliwiającym interaktywną wizualizację danych. Utworzenie takiego wykresu jest wbrew pozorom bardzo proste.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Wykres 1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">Wykres 2</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<p>Aby stworzyć wykres 1 wystarczy użyć polecenia <code>plot_ly()</code>, a następnie w środku podać co ma się znajdować na osi X, a co na osi Y. Jeśli chcemy aby każdy punkt był pokolorowany zgodnie z jakąś legendą wystarczy po przecinku dopisać <code>color = ...</code>, a w miejscu kropek wybieramy zgodnie z czym punkty mają być pokolorowane. Aby dodać tytuł, nazwy osi, itp., np. po operatorze <code>|&gt;</code> wpisujemy <code>layout(...)</code>, a w środku odpowiednie zmienne i wartości.</p>
+<p><strong>Kod:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>fig <span class="ot">&lt;-</span> dane <span class="sc">|&gt;</span> <span class="fu">plot_ly</span>(<span class="at">x =</span> <span class="sc">~</span>Rank, <span class="at">y =</span> <span class="sc">~</span><span class="st">`</span><span class="at">GNI - 2021</span><span class="st">`</span>, <span class="at">color =</span> <span class="sc">~</span>Continent) <span class="sc">|&gt;</span> <span class="fu">layout</span>(</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">'Wykres zlezności między rankingiem a GNI'</span>,</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">xaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">'Ranking'</span>),</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">yaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">'GNI- 2021'</span>)</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Wykres</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-ce56b2677aeec51d7d6a" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-ce56b2677aeec51d7d6a">{"x":{"visdat":{"1c434ed391":["function () ","plotlyVisDat"]},"cur_data":"1c434ed391","attrs":{"1c434ed391":{"x":{},"y":{},"color":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20]}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Wykres zlezności między rankingiem a GNI","xaxis":{"domain":[0,1],"automargin":true,"title":"Ranking"},"yaxis":{"domain":[0,1],"automargin":true,"title":"GNI- 2021"},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[79,110,117,120,121,122,130,131,132,135,137,139,140,141,143,146,147,149,150,151,153,154,155,157,158,159,160,161,163,164,165,166,167,169,170,172,173,175,176,179,181,182,183,184,185,187,189,191,192],"y":[22025,15336,10258,1364,3575,25831,3344,3142,1484,2181,11732,10800,4474,5466,2664,3810,2118,1198,732,1240,2210,3409,1466,16198,2700,12948,7679,1729,3218,2361,5025,3621,4790,7303,8634,4021,2889,13367,1076,966,2167,2133,5075,768,5745,2481,2172,1289,1622],"type":"scatter","mode":"markers","name":"Africa","marker":{"color":"rgba(102,194,165,1)","line":{"color":"rgba(102,194,165,1)"}},"textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[1,3,4,5,6,15,48,51,52,59,60,61,62,63,64,67,70,72,73,78,80,83,92,98,101,105,106,109,111,112,113,114,115,118,123,124,126,129,136,138,144,145,177,193],"y":[42274,90919,62607,17504,44501,4079,41524,3851,10588,7867,9977,7917,23943,17030,13158,9438,4548,64490,26658,12578,13021,14257,39497,1824,62574,9526,8920,7700,87134,9924,15448,13001,4624,4566,27054,52920,11466,6583,46112,6590,4192,5472,1314,3877],"type":"scatter","mode":"markers","name":"Asia","marker":{"color":"rgba(252,141,98,1)","line":{"color":"rgba(252,141,98,1)"}},"textfont":{"color":"rgba(252,141,98,1)"},"error_y":{"color":"rgba(252,141,98,1)"},"error_x":{"color":"rgba(252,141,98,1)"},"line":{"color":"rgba(252,141,98,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[49,66,74,82,91,99,100,116,119,142,148,152,156,171,174,178,180,188,190],"y":[12306,19974,30486,23392,7879,2848,17990,13484,26957,8834,12048,16792,8296,11488,11961,6309,5298,5625,8723],"type":"scatter","mode":"markers","name":"Central America","marker":{"color":"rgba(141,160,203,1)","line":{"color":"rgba(141,160,203,1)"}},"textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[7,8,9,10,11,12,13,18,19,20,22,24,25,26,27,29,30,31,32,33,35,36,37,38,39,40,41,44,46,47,50,53,54,56,57,58,65,75,81,103,104],"y":[18849,49452,146830,54534,55979,38048,84649,32789,66933,45225,39746,53619,55782,60365,52293,64660,54489,45937,33034,30690,37931,30132,51167,76169,38745,32803,42840,38354,38188,33155,38884,23079,29002,13256,14875,19123,15242,30027,20839,15918,14131],"type":"scatter","mode":"markers","name":"Europe","marker":{"color":"rgba(231,138,195,1)","line":{"color":"rgba(231,138,195,1)"}},"textfont":{"color":"rgba(231,138,195,1)"},"error_y":{"color":"rgba(231,138,195,1)"},"error_x":{"color":"rgba(231,138,195,1)"},"line":{"color":"rgba(231,138,195,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[34,76,84],"y":[27166,31033,14664],"type":"scatter","mode":"markers","name":"Europe/Asia","marker":{"color":"rgba(166,216,84,1)","line":{"color":"rgba(166,216,84,1)"}},"textfont":{"color":"rgba(166,216,84,1)"},"error_y":{"color":"rgba(166,216,84,1)"},"error_x":{"color":"rgba(166,216,84,1)"},"line":{"color":"rgba(166,216,84,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[16,28,69],"y":[46808,64765,17896],"type":"scatter","mode":"markers","name":"North America","marker":{"color":"rgba(255,217,47,1)","line":{"color":"rgba(255,217,47,1)"}},"textfont":{"color":"rgba(255,217,47,1)"},"error_y":{"color":"rgba(255,217,47,1)"},"error_x":{"color":"rgba(255,217,47,1)"},"line":{"color":"rgba(255,217,47,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[17,23,43,87,88,89,90,127],"y":[49238,44057,3085,3696,9980,4620,2482,4009],"type":"scatter","mode":"markers","name":"Oceania","marker":{"color":"rgba(229,196,148,1)","line":{"color":"rgba(229,196,148,1)"}},"textfont":{"color":"rgba(229,196,148,1)"},"error_y":{"color":"rgba(229,196,148,1)"},"error_x":{"color":"rgba(229,196,148,1)"},"line":{"color":"rgba(229,196,148,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[55,68,71,77,86,93,94,95,96,107,128,134],"y":[12672,24563,21269,20925,12349,14370,22465,14384,4811,12246,10312,8111],"type":"scatter","mode":"markers","name":"South America","marker":{"color":"rgba(179,179,179,1)","line":{"color":"rgba(179,179,179,1)"}},"textfont":{"color":"rgba(179,179,179,1)"},"error_y":{"color":"rgba(179,179,179,1)"},"error_x":{"color":"rgba(179,179,179,1)"},"line":{"color":"rgba(179,179,179,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<p>Aby stworzyć wykres 2 oprócz wykonania takich samych czynności jak w tworzeniu wykresu 1, trzeba w nawiasach polecenia <code>plot_ly()</code> dodać <code>typ = "bar"</code>, aby stworzyć wykres kolumnowy. Następnie po operatorze <code>|&gt;</code> należy wpisać <code>add_text()</code>, dzięki temu będziemy miei możliwość dodać tekst na wykresie, w nawiasach tego polecenia mamy wiele możliwych opcji stylistycnzych m.in <code>position</code>, <code>text</code> lub <code>textposition</code>.</p>
+<p><strong>Kod:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>fig2 <span class="ot">&lt;-</span> d <span class="sc">|&gt;</span> <span class="fu">plot_ly</span>(<span class="at">x =</span> <span class="sc">~</span>Continent, <span class="at">y =</span> <span class="sc">~</span>liczba, <span class="at">color =</span> <span class="sc">~</span>Continent, <span class="at">type =</span> <span class="st">"bar"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_text</span>(</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">text =</span> <span class="sc">~</span><span class="fu">paste0</span>(<span class="fu">round</span>(liczba <span class="sc">/</span> <span class="fu">sum</span>(d<span class="sc">$</span>liczba) <span class="sc">*</span> <span class="dv">100</span>, <span class="dv">1</span>), <span class="st">"%"</span>),</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">position =</span> <span class="st">"inside"</span>,</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">textposition =</span> <span class="st">"auto"</span>,</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">hoverinfo =</span> <span class="st">"text"</span>,</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">textfont =</span> <span class="fu">list</span>(<span class="at">color =</span> <span class="st">"black"</span>)</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Wykres liczby ludności na kontynentach"</span>,</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">xaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">"Kontynenty"</span>),</span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">yaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">"Liczba ludności"</span>,</span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>                 <span class="at">tickformat =</span> <span class="st">",d"</span>),</span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">showlegend =</span> <span class="cn">FALSE</span></span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Wykres:</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-016dc93debee7ad89b8a" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-016dc93debee7ad89b8a">{"x":{"visdat":{"1c4559c6065":["function () ","plotlyVisDat"]},"cur_data":"1c4559c6065","attrs":{"1c4559c6065":{"x":{},"y":{},"color":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"},"1c4559c6065.1":{"x":{},"y":{},"color":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","text":{},"mode":"text","position":"inside","textposition":"auto","hoverinfo":"text","textfont":{"color":"black"},"inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Wykres liczby ludności na kontynentach","xaxis":{"domain":[0,1],"automargin":true,"title":"Kontynenty","type":"category","categoryorder":"array","categoryarray":["Africa","Asia","Central America","Europe","Europe/Asia","North America","Oceania","South America"]},"yaxis":{"domain":[0,1],"automargin":true,"title":"Liczba ludności","tickformat":",d"},"showlegend":false,"hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":["Africa"],"y":[1454016446],"type":"bar","name":"Africa","marker":{"color":"rgba(102,194,165,1)","line":{"color":"rgba(102,194,165,1)"}},"textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["Asia"],"y":[4647530420],"type":"bar","name":"Asia","marker":{"color":"rgba(252,141,98,1)","line":{"color":"rgba(252,141,98,1)"}},"textfont":{"color":"rgba(252,141,98,1)"},"error_y":{"color":"rgba(252,141,98,1)"},"error_x":{"color":"rgba(252,141,98,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["Central America"],"y":[95479062],"type":"bar","name":"Central America","marker":{"color":"rgba(141,160,203,1)","line":{"color":"rgba(141,160,203,1)"}},"textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["Europe"],"y":[597004983],"type":"bar","name":"Europe","marker":{"color":"rgba(231,138,195,1)","line":{"color":"rgba(231,138,195,1)"}},"textfont":{"color":"rgba(231,138,195,1)"},"error_y":{"color":"rgba(231,138,195,1)"},"error_x":{"color":"rgba(231,138,195,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["Europe/Asia"],"y":[233988840],"type":"bar","name":"Europe/Asia","marker":{"color":"rgba(166,216,84,1)","line":{"color":"rgba(166,216,84,1)"}},"textfont":{"color":"rgba(166,216,84,1)"},"error_y":{"color":"rgba(166,216,84,1)"},"error_x":{"color":"rgba(166,216,84,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["North America"],"y":[507297260],"type":"bar","name":"North America","marker":{"color":"rgba(255,217,47,1)","line":{"color":"rgba(255,217,47,1)"}},"textfont":{"color":"rgba(255,217,47,1)"},"error_y":{"color":"rgba(255,217,47,1)"},"error_x":{"color":"rgba(255,217,47,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["Oceania"],"y":[44508456],"type":"bar","name":"Oceania","marker":{"color":"rgba(229,196,148,1)","line":{"color":"rgba(229,196,148,1)"}},"textfont":{"color":"rgba(229,196,148,1)"},"error_y":{"color":"rgba(229,196,148,1)"},"error_x":{"color":"rgba(229,196,148,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["South America"],"y":[439403065],"type":"bar","name":"South America","marker":{"color":"rgba(179,179,179,1)","line":{"color":"rgba(179,179,179,1)"}},"textfont":{"color":"rgba(179,179,179,1)"},"error_y":{"color":"rgba(179,179,179,1)"},"error_x":{"color":"rgba(179,179,179,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["Africa"],"y":[1454016446],"type":"scatter","text":"18.1%","mode":"text","position":"inside","textposition":"auto","hoverinfo":"text","textfont":{"color":"black"},"name":"Africa","marker":{"color":"rgba(102,194,165,1)","line":{"color":"rgba(102,194,165,1)"}},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["Asia"],"y":[4647530420],"type":"scatter","text":"58%","mode":"text","position":"inside","textposition":"auto","hoverinfo":"text","textfont":{"color":"black"},"name":"Asia","marker":{"color":"rgba(252,141,98,1)","line":{"color":"rgba(252,141,98,1)"}},"error_y":{"color":"rgba(252,141,98,1)"},"error_x":{"color":"rgba(252,141,98,1)"},"line":{"color":"rgba(252,141,98,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["Central America"],"y":[95479062],"type":"scatter","text":"1.2%","mode":"text","position":"inside","textposition":"auto","hoverinfo":"text","textfont":{"color":"black"},"name":"Central America","marker":{"color":"rgba(141,160,203,1)","line":{"color":"rgba(141,160,203,1)"}},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["Europe"],"y":[597004983],"type":"scatter","text":"7.4%","mode":"text","position":"inside","textposition":"auto","hoverinfo":"text","textfont":{"color":"black"},"name":"Europe","marker":{"color":"rgba(231,138,195,1)","line":{"color":"rgba(231,138,195,1)"}},"error_y":{"color":"rgba(231,138,195,1)"},"error_x":{"color":"rgba(231,138,195,1)"},"line":{"color":"rgba(231,138,195,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["Europe/Asia"],"y":[233988840],"type":"scatter","text":"2.9%","mode":"text","position":"inside","textposition":"auto","hoverinfo":"text","textfont":{"color":"black"},"name":"Europe/Asia","marker":{"color":"rgba(166,216,84,1)","line":{"color":"rgba(166,216,84,1)"}},"error_y":{"color":"rgba(166,216,84,1)"},"error_x":{"color":"rgba(166,216,84,1)"},"line":{"color":"rgba(166,216,84,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["North America"],"y":[507297260],"type":"scatter","text":"6.3%","mode":"text","position":"inside","textposition":"auto","hoverinfo":"text","textfont":{"color":"black"},"name":"North America","marker":{"color":"rgba(255,217,47,1)","line":{"color":"rgba(255,217,47,1)"}},"error_y":{"color":"rgba(255,217,47,1)"},"error_x":{"color":"rgba(255,217,47,1)"},"line":{"color":"rgba(255,217,47,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["Oceania"],"y":[44508456],"type":"scatter","text":"0.6%","mode":"text","position":"inside","textposition":"auto","hoverinfo":"text","textfont":{"color":"black"},"name":"Oceania","marker":{"color":"rgba(229,196,148,1)","line":{"color":"rgba(229,196,148,1)"}},"error_y":{"color":"rgba(229,196,148,1)"},"error_x":{"color":"rgba(229,196,148,1)"},"line":{"color":"rgba(229,196,148,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["South America"],"y":[439403065],"type":"scatter","text":"5.5%","mode":"text","position":"inside","textposition":"auto","hoverinfo":"text","textfont":{"color":"black"},"name":"South America","marker":{"color":"rgba(179,179,179,1)","line":{"color":"rgba(179,179,179,1)"}},"error_y":{"color":"rgba(179,179,179,1)"},"error_x":{"color":"rgba(179,179,179,1)"},"line":{"color":"rgba(179,179,179,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="interaktywna-mapa" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="interaktywna-mapa"><span class="header-section-number">3.8</span> Interaktywna mapa</h2>
+<p>Aby stworzyć interaktywną mapę użyłem biblioteki <code>leaflet</code>. Służy ona do tworzenia interaktywnych map, jest łatwa w użyciu. Poniżej znajduję się mapa na której można sprawdzić populację wybranych przezemnie kilku krajów. W tym celu skróciłem dane do 6 krajów za pomocą polecenia <code>head(dane)</code> oraz dodałem wyszukane z internetu współrzędne geograficzne (szerokość i długość) do każdego kraju dodając poprostu dwie kolumny do skróconych danych. Następnie tak przekształcone dane zostały użyte w naszej mapce.</p>
+<p><strong>Kod:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>dane_mapa <span class="ot">&lt;-</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(dane) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">szer =</span> <span class="fu">c</span>(<span class="fl">35.6895</span>, <span class="fl">25.0320</span>, <span class="fl">1.3521</span>, <span class="fl">22.3193</span>, <span class="fl">39.9042</span>, <span class="fl">37.5665</span>), </span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">dl =</span> <span class="fu">c</span>(<span class="fl">139.6917</span>, <span class="fl">121.5654</span>, <span class="fl">103.8198</span>, <span class="fl">114.1694</span>, <span class="fl">116.4074</span>, <span class="fl">126.9780</span>)</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> <span class="fu">select</span>(Country, <span class="st">`</span><span class="at">Population - 2023</span><span class="st">`</span>, szer, dl) </span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>mapa <span class="ot">&lt;-</span> <span class="fu">leaflet</span>(dane_mapa) <span class="sc">|&gt;</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>() <span class="sc">|&gt;</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addCircleMarkers</span>(</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>    <span class="sc">~</span> dl,</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>    <span class="sc">~</span> szer,</span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">radius =</span> <span class="dv">20</span>,</span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">fillOpacity =</span> <span class="fl">0.5</span>,</span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">popup =</span> <span class="sc">~</span> <span class="fu">paste</span>(Country, <span class="st">"| Population:"</span>, <span class="st">`</span><span class="at">Population - 2023</span><span class="st">`</span>)</span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Mapa:</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-91d417740718964e8d35" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-91d417740718964e8d35">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addCircleMarkers","args":[[35.6895,25.032,1.3521,22.3193,39.9042,37.5665],[139.6917,121.5654,103.8198,114.1694,116.4074,126.978],20,null,null,{"interactive":true,"className":"","stroke":true,"color":"#03F","weight":5,"opacity":0.5,"fill":true,"fillColor":"#03F","fillOpacity":0.5},null,null,["Japan | Population: 123294513","Taiwan | Population: 10143543","Singapore | Population: 6014723","Hong Kong | Population: 7491609","China | Population: 1425671352","South Korea | Population: 51784059"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[1.3521,39.9042],"lng":[103.8198,139.6917]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<!-- -->
+
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Skopiowano!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Skopiowano!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Kod źródłowy</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb16" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Sprawozdanie"</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "Grupa 1"</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2024-01-10"</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Radosław Górecki"</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="an">abstract-title:</span><span class="co"> "Streszczenie"</span></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="an">abstract:</span><span class="co"> "&lt;span style='font-size: 15px;'&gt;W tej pracy prezentuję analizę danych dotyczących średniego ilorazu inteligencji (IQ) mieszkańców różnych krajów na świecie. Dane zostały pozyskane z serwisu Kaggle i zawierają informacje o niektóych czynnikach mogących wpływać na średnie IQ w danym państwie. Przy użyciu języka R i pakietów takich jak m.in. tidyverse, ggplot2, plotly oraz leaflet, przeprowadziłem analizę i wizualizację danych. Opracowane zostały podstawowe oraz interaktywne wykresy. Dodatkowo, przedstawiam stworzoną funkcję obliczającą wskaźnik edukacyjno-ekonomiczny oraz interaktywną mapę z oznaczeniem populacji wybranych krajów. Praca zawiera również wnioski i interpretacje uzyskanych rezultatów.&lt;/span&gt;"</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a><span class="an">lang:</span><span class="co"> pl</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> </span></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-depth: 2</span></span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-title: "Spis treści"</span></span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a><span class="co">    number-sections: true</span></span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a><span class="co">    smooth-scroll: true</span></span>
+<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
+<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a><span class="co">    code-overflow: scroll</span></span>
+<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a><span class="co">    theme: </span></span>
+<span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a><span class="co">      light: minty</span></span>
+<span id="cb16-20"><a href="#cb16-20" aria-hidden="true" tabindex="-1"></a><span class="an">editor_options:</span><span class="co"> </span></span>
+<span id="cb16-21"><a href="#cb16-21" aria-hidden="true" tabindex="-1"></a><span class="co">  chunk_output_type: console</span></span>
+<span id="cb16-22"><a href="#cb16-22" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb16-23"><a href="#cb16-23" aria-hidden="true" tabindex="-1"></a><span class="fu"># Wstęp</span></span>
+<span id="cb16-24"><a href="#cb16-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-25"><a href="#cb16-25" aria-hidden="true" tabindex="-1"></a>Witam, nazywam się Radosław Górecki, jestem studentem pierwszego roku z pasją do programowania. Ostatnio zainteresowałem się analizą danych dotyczących średniego ilorazu inteligencji (IQ) mieszkańców różnych krajów. Wykorzystałem dane z Kaggle oraz języka R, aby przeprowadzić analizę i stworzyć interaktywne wizualizacje. Zapraszam do odkrywania wniosków dotyczących czynników wpływających na średni IQ i innych ciekawostek, które udało mi się odkryć w trakcie pracy.</span>
+<span id="cb16-26"><a href="#cb16-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-27"><a href="#cb16-27" aria-hidden="true" tabindex="-1"></a><span class="fu"># Zainteresowania</span></span>
+<span id="cb16-28"><a href="#cb16-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-29"><a href="#cb16-29" aria-hidden="true" tabindex="-1"></a>Od jakiegoś czasu interesuję się programowaniem. Próbowałem sobie programować w różnych językach takich jak: C++, JavaScript, Python, HTML. Jednak najbardziej spodobało mi się prograowanie w Pythonie, dlatego, że można tam pisać bardzo prosty i czytelny kod. Niedawno zainteresowałem się machine learningiem gdzie wydaje mi się użytecznymi językami mogą być python oraz R. Jeszcze nie do końca wybrałem co chcę w życiu robić, narazie testuje sobie różne ścieżki kariery programisty. Tak jak już wyżej pisałem próbowałem sobie pisać w różnych językach, napisałem różne rzeczy takie jak: strony internetowe, grę komputerową, grę internetową, proste aplikacje w konsoli. Teraz na celowniku uczenie maszynowe :) </span>
+<span id="cb16-30"><a href="#cb16-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-31"><a href="#cb16-31" aria-hidden="true" tabindex="-1"></a><span class="fu"># Zawartość</span></span>
+<span id="cb16-32"><a href="#cb16-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-33"><a href="#cb16-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-34"><a href="#cb16-34" aria-hidden="true" tabindex="-1"></a><span class="in">```{r filename="Używane Pakiety"}</span></span>
+<span id="cb16-35"><a href="#cb16-35" aria-hidden="true" tabindex="-1"></a><span class="co">#| output: false</span></span>
+<span id="cb16-36"><a href="#cb16-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-37"><a href="#cb16-37" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb16-38"><a href="#cb16-38" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb16-39"><a href="#cb16-39" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(DT)</span>
+<span id="cb16-40"><a href="#cb16-40" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tibble)</span>
+<span id="cb16-41"><a href="#cb16-41" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb16-42"><a href="#cb16-42" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb16-43"><a href="#cb16-43" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
+<span id="cb16-44"><a href="#cb16-44" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb16-45"><a href="#cb16-45" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scales)</span>
+<span id="cb16-46"><a href="#cb16-46" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb16-47"><a href="#cb16-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-48"><a href="#cb16-48" aria-hidden="true" tabindex="-1"></a><span class="fu">## Pozyskanie danych</span></span>
+<span id="cb16-49"><a href="#cb16-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-50"><a href="#cb16-50" aria-hidden="true" tabindex="-1"></a>Dane zostały pobrane z popularnej strony: <span class="co">[</span><span class="ot">www.kaggle.com</span><span class="co">](https://www.kaggle.com)</span>.</span>
+<span id="cb16-51"><a href="#cb16-51" aria-hidden="true" tabindex="-1"></a>Do zaimportowania danych zastosowałem polecenie <span class="in">`read_csv()`</span>:</span>
+<span id="cb16-54"><a href="#cb16-54" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb16-55"><a href="#cb16-55" aria-hidden="true" tabindex="-1"></a><span class="co">#| output: false</span></span>
+<span id="cb16-56"><a href="#cb16-56" aria-hidden="true" tabindex="-1"></a>dane <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="at">file=</span><span class="st">"dane/avgIQpercountry.csv"</span>)</span>
+<span id="cb16-57"><a href="#cb16-57" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb16-58"><a href="#cb16-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-59"><a href="#cb16-59" aria-hidden="true" tabindex="-1"></a>Polecenia mogłem używać po wczytaniu biblioteki <span class="in">`tidyverse`</span>, w której mieszczą się pakiety języka R przeznaczone do nauki o danych.</span>
+<span id="cb16-60"><a href="#cb16-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-61"><a href="#cb16-61" aria-hidden="true" tabindex="-1"></a><span class="fu">## Opis danych </span></span>
+<span id="cb16-62"><a href="#cb16-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-63"><a href="#cb16-63" aria-hidden="true" tabindex="-1"></a>Zestaw danych nosi nazwę: ***Average global IQ per country with other stats***.</span>
+<span id="cb16-64"><a href="#cb16-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-65"><a href="#cb16-65" aria-hidden="true" tabindex="-1"></a>Zawiera on średnie wyniki IQ (ilorazów inteligencji) mieszkańców danego kraju z uwzględnieniem mających na to wpływ niektórych czynników. </span>
+<span id="cb16-66"><a href="#cb16-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-67"><a href="#cb16-67" aria-hidden="true" tabindex="-1"></a>Możesz pobrać plik z danymi tutaj: <span class="co">[</span><span class="ot">Kliknij</span><span class="co">](dane/avgIQpercountry.csv)</span>.</span>
+<span id="cb16-68"><a href="#cb16-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-69"><a href="#cb16-69" aria-hidden="true" tabindex="-1"></a>**Meta Dane:**</span>
+<span id="cb16-70"><a href="#cb16-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-71"><a href="#cb16-71" aria-hidden="true" tabindex="-1"></a>|           Zmienna               |                                     Opis                                  |</span>
+<span id="cb16-72"><a href="#cb16-72" aria-hidden="true" tabindex="-1"></a>|:-------------------------------:|:-------------------------------------------------------------------------:|</span>
+<span id="cb16-73"><a href="#cb16-73" aria-hidden="true" tabindex="-1"></a>| Rank                            | Ranking danego kraju bazujący na średnim IQ                               |</span>
+<span id="cb16-74"><a href="#cb16-74" aria-hidden="true" tabindex="-1"></a>| Country                         | Nazwa kraju                                                               |</span>
+<span id="cb16-75"><a href="#cb16-75" aria-hidden="true" tabindex="-1"></a>| Average IQ                      | Średni wynik IQ                                                           |</span>
+<span id="cb16-76"><a href="#cb16-76" aria-hidden="true" tabindex="-1"></a>| Continent                       | Kontynent na którym leży dany kraj                                        |</span>
+<span id="cb16-77"><a href="#cb16-77" aria-hidden="true" tabindex="-1"></a>| Literacy Rate                   | Analfabetyzm (wzór: Literaci/Całkowita populacja)                         | </span>
+<span id="cb16-78"><a href="#cb16-78" aria-hidden="true" tabindex="-1"></a>| Nobel Prices                    | Ilość zdobytych nagród Nobla                                              |</span>
+<span id="cb16-79"><a href="#cb16-79" aria-hidden="true" tabindex="-1"></a>| HDI 2021                        | Wskaźnik Rozwoju Społecznego w 2021 roku                                  |</span>
+<span id="cb16-80"><a href="#cb16-80" aria-hidden="true" tabindex="-1"></a>| Mean years of schoolling - 2021 | Średnia liczba lat, w których każdy uczeń uczęszcza do szkoły w 2021 roku |</span>
+<span id="cb16-81"><a href="#cb16-81" aria-hidden="true" tabindex="-1"></a>| GNI - 2021                      | Indeks Krajowy Brutto w 2021 roku                                         |</span>
+<span id="cb16-82"><a href="#cb16-82" aria-hidden="true" tabindex="-1"></a>| Population - 2023               | Populacja w danych kraju w 2023 roku                                      |</span>
+<span id="cb16-83"><a href="#cb16-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-84"><a href="#cb16-84" aria-hidden="true" tabindex="-1"></a><span class="fu">## Przetwarzanie Potokowe i interaktywna tabela</span></span>
+<span id="cb16-85"><a href="#cb16-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-86"><a href="#cb16-86" aria-hidden="true" tabindex="-1"></a>Korzystając z możliwości <span class="in">`wrappingu`</span> wykonalem podsumowanie danych w formie interaktywnej tabeli dla Europy, Azji oraz Afryki. W tym celu m.in stworzyłem nową kolumnę w której zawiera się podział na grupy bazując na średnim ilorazie inteligencji.</span>
+<span id="cb16-87"><a href="#cb16-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-88"><a href="#cb16-88" aria-hidden="true" tabindex="-1"></a>::: panel-tabset</span>
+<span id="cb16-89"><a href="#cb16-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-90"><a href="#cb16-90" aria-hidden="true" tabindex="-1"></a><span class="fu">## Europa</span></span>
+<span id="cb16-91"><a href="#cb16-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-92"><a href="#cb16-92" aria-hidden="true" tabindex="-1"></a>**Skrypt:**</span>
+<span id="cb16-93"><a href="#cb16-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-96"><a href="#cb16-96" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb16-97"><a href="#cb16-97" aria-hidden="true" tabindex="-1"></a>Europe <span class="ot">&lt;-</span> dane <span class="sc">|&gt;</span> </span>
+<span id="cb16-98"><a href="#cb16-98" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Continent <span class="sc">==</span> <span class="st">"Europe"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb16-99"><a href="#cb16-99" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Country, <span class="st">`</span><span class="at">Average IQ</span><span class="st">`</span>, <span class="st">`</span><span class="at">Nobel Prices</span><span class="st">`</span>, <span class="st">`</span><span class="at">HDI (2021)</span><span class="st">`</span>) <span class="sc">|&gt;</span></span>
+<span id="cb16-100"><a href="#cb16-100" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(  </span>
+<span id="cb16-101"><a href="#cb16-101" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">IQ Classification</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">cut</span>(<span class="st">`</span><span class="at">Average IQ</span><span class="st">`</span>, <span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">80</span>, <span class="dv">90</span>, <span class="dv">100</span>, <span class="sc">+</span><span class="cn">Inf</span>), <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Very Low Average"</span>, <span class="st">"Low Average"</span>, <span class="st">"Average"</span>, <span class="st">"High Average"</span>))</span>
+<span id="cb16-102"><a href="#cb16-102" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb16-103"><a href="#cb16-103" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(<span class="st">`</span><span class="at">IQ Classification</span><span class="st">`</span>) <span class="sc">|&gt;</span></span>
+<span id="cb16-104"><a href="#cb16-104" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb16-105"><a href="#cb16-105" aria-hidden="true" tabindex="-1"></a>    <span class="at">Mean_IQ =</span> <span class="fu">round</span>(<span class="fu">mean</span>(<span class="st">`</span><span class="at">Average IQ</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="dv">2</span>),</span>
+<span id="cb16-106"><a href="#cb16-106" aria-hidden="true" tabindex="-1"></a>    <span class="at">Total_Nobel_Prizes =</span> <span class="fu">sum</span>(<span class="st">`</span><span class="at">Nobel Prices</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb16-107"><a href="#cb16-107" aria-hidden="true" tabindex="-1"></a>    <span class="at">Mean_HDI =</span> <span class="fu">round</span>(<span class="fu">mean</span>(<span class="st">`</span><span class="at">HDI (2021)</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="dv">2</span>)</span>
+<span id="cb16-108"><a href="#cb16-108" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb16-109"><a href="#cb16-109" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb16-110"><a href="#cb16-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-111"><a href="#cb16-111" aria-hidden="true" tabindex="-1"></a>**Tabela:**</span>
+<span id="cb16-112"><a href="#cb16-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-115"><a href="#cb16-115" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb16-116"><a href="#cb16-116" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb16-117"><a href="#cb16-117" aria-hidden="true" tabindex="-1"></a><span class="fu">datatable</span>(Europe)</span>
+<span id="cb16-118"><a href="#cb16-118" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb16-119"><a href="#cb16-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-120"><a href="#cb16-120" aria-hidden="true" tabindex="-1"></a>**Wnioski:**</span>
+<span id="cb16-121"><a href="#cb16-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-122"><a href="#cb16-122" aria-hidden="true" tabindex="-1"></a>Powyższa tabela zawiera klasyfikacje IQ krajów Europy podzieloną na grupy, a także wybrane niektóre czynniki. Można z niej wywnioskowować, że ***liczba zdobytych nagród Nobla*** ma mały wpływ na wyniki IQ, natomiast ***średni wskaźnik rozwoju społecznego*** ma już dużo większy wpływ. </span>
+<span id="cb16-123"><a href="#cb16-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-124"><a href="#cb16-124" aria-hidden="true" tabindex="-1"></a><span class="fu">## Azja</span></span>
+<span id="cb16-125"><a href="#cb16-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-126"><a href="#cb16-126" aria-hidden="true" tabindex="-1"></a>**Skrypt:**</span>
+<span id="cb16-127"><a href="#cb16-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-130"><a href="#cb16-130" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb16-131"><a href="#cb16-131" aria-hidden="true" tabindex="-1"></a>Asia <span class="ot">&lt;-</span> dane <span class="sc">|&gt;</span> </span>
+<span id="cb16-132"><a href="#cb16-132" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Continent <span class="sc">==</span> <span class="st">"Asia"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb16-133"><a href="#cb16-133" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Country, <span class="st">`</span><span class="at">Average IQ</span><span class="st">`</span>, <span class="st">`</span><span class="at">Nobel Prices</span><span class="st">`</span>, <span class="st">`</span><span class="at">HDI (2021)</span><span class="st">`</span>) <span class="sc">|&gt;</span></span>
+<span id="cb16-134"><a href="#cb16-134" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(  </span>
+<span id="cb16-135"><a href="#cb16-135" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">IQ Classification</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">cut</span>(<span class="st">`</span><span class="at">Average IQ</span><span class="st">`</span>, <span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">80</span>, <span class="dv">90</span>, <span class="dv">100</span>, <span class="sc">+</span><span class="cn">Inf</span>), <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Very Low Average"</span>, <span class="st">"Low Average"</span>, <span class="st">"Average"</span>, <span class="st">"High Average"</span>))</span>
+<span id="cb16-136"><a href="#cb16-136" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb16-137"><a href="#cb16-137" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(<span class="st">`</span><span class="at">IQ Classification</span><span class="st">`</span>) <span class="sc">|&gt;</span></span>
+<span id="cb16-138"><a href="#cb16-138" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb16-139"><a href="#cb16-139" aria-hidden="true" tabindex="-1"></a>    <span class="at">Mean_IQ =</span> <span class="fu">round</span>(<span class="fu">mean</span>(<span class="st">`</span><span class="at">Average IQ</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="dv">2</span>),</span>
+<span id="cb16-140"><a href="#cb16-140" aria-hidden="true" tabindex="-1"></a>    <span class="at">Total_Nobel_Prizes =</span> <span class="fu">sum</span>(<span class="st">`</span><span class="at">Nobel Prices</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb16-141"><a href="#cb16-141" aria-hidden="true" tabindex="-1"></a>    <span class="at">Mean_HDI =</span> <span class="fu">round</span>(<span class="fu">mean</span>(<span class="st">`</span><span class="at">HDI (2021)</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="dv">2</span>)</span>
+<span id="cb16-142"><a href="#cb16-142" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb16-143"><a href="#cb16-143" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb16-144"><a href="#cb16-144" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-145"><a href="#cb16-145" aria-hidden="true" tabindex="-1"></a>**Tabela:**</span>
+<span id="cb16-146"><a href="#cb16-146" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-149"><a href="#cb16-149" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb16-150"><a href="#cb16-150" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb16-151"><a href="#cb16-151" aria-hidden="true" tabindex="-1"></a><span class="fu">datatable</span>(Asia)</span>
+<span id="cb16-152"><a href="#cb16-152" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb16-153"><a href="#cb16-153" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-154"><a href="#cb16-154" aria-hidden="true" tabindex="-1"></a>**Wnioski:**</span>
+<span id="cb16-155"><a href="#cb16-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-156"><a href="#cb16-156" aria-hidden="true" tabindex="-1"></a>Powyższa tabela zawiera klasyfikacje IQ krajów Azji podzieloną na grupy, a także wybrane niektóre czynniki. Tutaj można postawić inne wnioski niż w poprzedniej tabeli. Widać wyraźnie, że klasyfikacja IQ *"Low Average"* posiada większy ***średni wskaźnik rozwoju społecznego*** niż klasyfikacja *"Average"*, a więc ten czynnik nie jest decydujący we wpływaniu na ostateczny średni wynik IQ. Natomiast ***liczba nagród nobla*** nadal wydaje się nie mieć za dużego wpływu tak samo jak w poprzednim przykładzie.</span>
+<span id="cb16-157"><a href="#cb16-157" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-158"><a href="#cb16-158" aria-hidden="true" tabindex="-1"></a><span class="fu">## Afryka</span></span>
+<span id="cb16-159"><a href="#cb16-159" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-160"><a href="#cb16-160" aria-hidden="true" tabindex="-1"></a>**Skrypt:**</span>
+<span id="cb16-161"><a href="#cb16-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-164"><a href="#cb16-164" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb16-165"><a href="#cb16-165" aria-hidden="true" tabindex="-1"></a>Africa <span class="ot">&lt;-</span> dane <span class="sc">|&gt;</span> </span>
+<span id="cb16-166"><a href="#cb16-166" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Continent <span class="sc">==</span> <span class="st">"Africa"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb16-167"><a href="#cb16-167" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Country, <span class="st">`</span><span class="at">Average IQ</span><span class="st">`</span>, <span class="st">`</span><span class="at">Nobel Prices</span><span class="st">`</span>, <span class="st">`</span><span class="at">HDI (2021)</span><span class="st">`</span>) <span class="sc">|&gt;</span></span>
+<span id="cb16-168"><a href="#cb16-168" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(  </span>
+<span id="cb16-169"><a href="#cb16-169" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">IQ Classification</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">cut</span>(<span class="st">`</span><span class="at">Average IQ</span><span class="st">`</span>, <span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">80</span>, <span class="dv">90</span>, <span class="dv">100</span>, <span class="sc">+</span><span class="cn">Inf</span>), <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Very Low Average"</span>, <span class="st">"Low Average"</span>, <span class="st">"Average"</span>, <span class="st">"High Average"</span>))</span>
+<span id="cb16-170"><a href="#cb16-170" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb16-171"><a href="#cb16-171" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(<span class="st">`</span><span class="at">IQ Classification</span><span class="st">`</span>) <span class="sc">|&gt;</span></span>
+<span id="cb16-172"><a href="#cb16-172" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb16-173"><a href="#cb16-173" aria-hidden="true" tabindex="-1"></a>    <span class="at">Mean_IQ =</span> <span class="fu">round</span>(<span class="fu">mean</span>(<span class="st">`</span><span class="at">Average IQ</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="dv">2</span>),</span>
+<span id="cb16-174"><a href="#cb16-174" aria-hidden="true" tabindex="-1"></a>    <span class="at">Total_Nobel_Prizes =</span> <span class="fu">sum</span>(<span class="st">`</span><span class="at">Nobel Prices</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb16-175"><a href="#cb16-175" aria-hidden="true" tabindex="-1"></a>    <span class="at">Mean_HDI =</span> <span class="fu">round</span>(<span class="fu">mean</span>(<span class="st">`</span><span class="at">HDI (2021)</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="dv">2</span>)</span>
+<span id="cb16-176"><a href="#cb16-176" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb16-177"><a href="#cb16-177" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb16-178"><a href="#cb16-178" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-179"><a href="#cb16-179" aria-hidden="true" tabindex="-1"></a>**Tabela:**</span>
+<span id="cb16-180"><a href="#cb16-180" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-183"><a href="#cb16-183" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb16-184"><a href="#cb16-184" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb16-185"><a href="#cb16-185" aria-hidden="true" tabindex="-1"></a><span class="fu">datatable</span>(Africa)</span>
+<span id="cb16-186"><a href="#cb16-186" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb16-187"><a href="#cb16-187" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-188"><a href="#cb16-188" aria-hidden="true" tabindex="-1"></a>**Wnioski:**</span>
+<span id="cb16-189"><a href="#cb16-189" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-190"><a href="#cb16-190" aria-hidden="true" tabindex="-1"></a>Powyższa tabela zawiera klasyfikacje IQ krajów Afryki podzieloną na grupy, a także wybrane niektóre czynniki. Można z niej wywnioskowować, że ***liczba zdobytych nagród Nobla*** ma mały wpływ na wyniki IQ, natomiast ***średni wskaźnik rozwoju społecznego*** ma duże znaczenie. Wnioski bardzo podobne jak w przykładzie Europy. </span>
+<span id="cb16-191"><a href="#cb16-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-192"><a href="#cb16-192" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb16-193"><a href="#cb16-193" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-194"><a href="#cb16-194" aria-hidden="true" tabindex="-1"></a><span class="fu">## Funkcja</span></span>
+<span id="cb16-195"><a href="#cb16-195" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-196"><a href="#cb16-196" aria-hidden="true" tabindex="-1"></a>Napisana funkcja oblicza ***Wskaźnik Edukacyjno-Ekonomiczny***.</span>
+<span id="cb16-197"><a href="#cb16-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-198"><a href="#cb16-198" aria-hidden="true" tabindex="-1"></a>**Kod:**</span>
+<span id="cb16-201"><a href="#cb16-201" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb16-202"><a href="#cb16-202" aria-hidden="true" tabindex="-1"></a>funkcja <span class="ot">&lt;-</span> <span class="cf">function</span>(data, col_schooling, col_GNI, col_literacy){</span>
+<span id="cb16-203"><a href="#cb16-203" aria-hidden="true" tabindex="-1"></a>  edu_econ_index <span class="ot">&lt;-</span> data[[col_schooling]] <span class="sc">*</span> data[[col_GNI]] <span class="sc">*</span> data[[col_literacy]]</span>
+<span id="cb16-204"><a href="#cb16-204" aria-hidden="true" tabindex="-1"></a>  data <span class="ot">&lt;-</span> <span class="fu">mutate</span>(data, edu_econ_index)</span>
+<span id="cb16-205"><a href="#cb16-205" aria-hidden="true" tabindex="-1"></a>  plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x=</span>Rank, <span class="at">y=</span>edu_econ_index)) <span class="sc">+</span></span>
+<span id="cb16-206"><a href="#cb16-206" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">fill =</span> <span class="st">"skyblue"</span>) <span class="sc">+</span></span>
+<span id="cb16-207"><a href="#cb16-207" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Wskaźnik Edukacyjno-Ekonomiczny"</span>, <span class="at">x =</span> <span class="st">"Ranking Kraju"</span>, <span class="at">y =</span> <span class="st">"Wskaźnik"</span>) <span class="sc">+</span></span>
+<span id="cb16-208"><a href="#cb16-208" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>()</span>
+<span id="cb16-209"><a href="#cb16-209" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb16-210"><a href="#cb16-210" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(plot)</span>
+<span id="cb16-211"><a href="#cb16-211" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb16-212"><a href="#cb16-212" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb16-213"><a href="#cb16-213" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-216"><a href="#cb16-216" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb16-217"><a href="#cb16-217" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
+<span id="cb16-218"><a href="#cb16-218" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb16-219"><a href="#cb16-219" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-220"><a href="#cb16-220" aria-hidden="true" tabindex="-1"></a>daneT <span class="ot">&lt;-</span> dane <span class="sc">|&gt;</span> <span class="fu">as_tibble</span>()</span>
+<span id="cb16-221"><a href="#cb16-221" aria-hidden="true" tabindex="-1"></a><span class="fu">funkcja</span>(daneT, <span class="st">"Mean years of schooling - 2021"</span>, <span class="st">"GNI - 2021"</span>, <span class="st">"Literacy Rate"</span>)</span>
+<span id="cb16-222"><a href="#cb16-222" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb16-223"><a href="#cb16-223" aria-hidden="true" tabindex="-1"></a>**Rezultat:**</span>
+<span id="cb16-226"><a href="#cb16-226" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb16-227"><a href="#cb16-227" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
+<span id="cb16-228"><a href="#cb16-228" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb16-229"><a href="#cb16-229" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-230"><a href="#cb16-230" aria-hidden="true" tabindex="-1"></a>daneT <span class="ot">&lt;-</span> dane <span class="sc">|&gt;</span> <span class="fu">as_tibble</span>()</span>
+<span id="cb16-231"><a href="#cb16-231" aria-hidden="true" tabindex="-1"></a><span class="fu">funkcja</span>(daneT, <span class="st">"Mean years of schooling - 2021"</span>, <span class="st">"GNI - 2021"</span>, <span class="st">"Literacy Rate"</span>)</span>
+<span id="cb16-232"><a href="#cb16-232" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb16-233"><a href="#cb16-233" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb16-234"><a href="#cb16-234" aria-hidden="true" tabindex="-1"></a>Jak już wyżej napisałem funkcja oblicza Wskaźnik Edukacyjno-Ekonomiczny, wykorzystując wzór: $$W = x * y * z$$  </span>
+<span id="cb16-235"><a href="#cb16-235" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-236"><a href="#cb16-236" aria-hidden="true" tabindex="-1"></a>Gdzie: </span>
+<span id="cb16-237"><a href="#cb16-237" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-238"><a href="#cb16-238" aria-hidden="true" tabindex="-1"></a>  W - Wskaźnik edukacyjno-ekonomiczny</span>
+<span id="cb16-239"><a href="#cb16-239" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-240"><a href="#cb16-240" aria-hidden="true" tabindex="-1"></a>  x - średnia długość nauki</span>
+<span id="cb16-241"><a href="#cb16-241" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb16-242"><a href="#cb16-242" aria-hidden="true" tabindex="-1"></a>  y - PKB na mieszkańca</span>
+<span id="cb16-243"><a href="#cb16-243" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb16-244"><a href="#cb16-244" aria-hidden="true" tabindex="-1"></a>  z - wskaźnik piśmienności</span>
+<span id="cb16-245"><a href="#cb16-245" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb16-246"><a href="#cb16-246" aria-hidden="true" tabindex="-1"></a><span class="fu">## Pętla</span></span>
+<span id="cb16-247"><a href="#cb16-247" aria-hidden="true" tabindex="-1"></a>Poniższy kod tworzy 3 przykładowe pliki csv, następnie wczytuje stworzone pliki i łączy je ze sobą w całość jako tibble. W skrypcie została użyta funkcja <span class="in">`map_dfr()`</span>, zwraca ona ramkę danych stworzoną przez połączenie wierszy.</span>
+<span id="cb16-248"><a href="#cb16-248" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-249"><a href="#cb16-249" aria-hidden="true" tabindex="-1"></a>**Skrypt:**</span>
+<span id="cb16-252"><a href="#cb16-252" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb16-253"><a href="#cb16-253" aria-hidden="true" tabindex="-1"></a><span class="co">#| output: false</span></span>
+<span id="cb16-254"><a href="#cb16-254" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-255"><a href="#cb16-255" aria-hidden="true" tabindex="-1"></a><span class="co"># Tworzenie przykładowych 3 plików</span></span>
+<span id="cb16-256"><a href="#cb16-256" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(<span class="fu">data.frame</span>(<span class="at">id =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>), <span class="at">name =</span> <span class="fu">c</span>(<span class="st">"Marek"</span>, <span class="st">"Mateusz"</span>, <span class="st">"Janek"</span>), <span class="at">iq =</span> <span class="fu">sample</span>(<span class="dv">30</span><span class="sc">:</span><span class="dv">200</span>, <span class="dv">3</span>)), <span class="st">"plik1.csv"</span>)</span>
+<span id="cb16-257"><a href="#cb16-257" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(<span class="fu">data.frame</span>(<span class="at">id =</span> <span class="dv">4</span>, <span class="at">name =</span> <span class="st">"Zbyszek"</span>, <span class="at">iq =</span> <span class="fu">sample</span>(<span class="dv">30</span><span class="sc">:</span><span class="dv">200</span>, <span class="dv">1</span>)), <span class="st">"plik2.csv"</span>)</span>
+<span id="cb16-258"><a href="#cb16-258" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(<span class="fu">data.frame</span>(<span class="at">id =</span> <span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">6</span>), <span class="at">name =</span> <span class="fu">c</span>(<span class="st">"Piotr"</span>, <span class="st">"Mariusz"</span>), <span class="at">iq =</span> <span class="fu">sample</span>(<span class="dv">30</span><span class="sc">:</span><span class="dv">200</span>, <span class="dv">2</span>)), <span class="st">"plik3.csv"</span>)</span>
+<span id="cb16-259"><a href="#cb16-259" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-260"><a href="#cb16-260" aria-hidden="true" tabindex="-1"></a><span class="co"># funckja wczytująca pliki</span></span>
+<span id="cb16-261"><a href="#cb16-261" aria-hidden="true" tabindex="-1"></a>wczytaj_plik <span class="ot">&lt;-</span> <span class="cf">function</span>(sciezka) {</span>
+<span id="cb16-262"><a href="#cb16-262" aria-hidden="true" tabindex="-1"></a>  <span class="fu">read_csv</span>(sciezka) <span class="sc">|&gt;</span></span>
+<span id="cb16-263"><a href="#cb16-263" aria-hidden="true" tabindex="-1"></a>    <span class="fu">as_tibble</span>()</span>
+<span id="cb16-264"><a href="#cb16-264" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb16-265"><a href="#cb16-265" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-266"><a href="#cb16-266" aria-hidden="true" tabindex="-1"></a><span class="co"># lista plików do wcyztania</span></span>
+<span id="cb16-267"><a href="#cb16-267" aria-hidden="true" tabindex="-1"></a>pliki <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"plik1.csv"</span>, <span class="st">"plik2.csv"</span>, <span class="st">"plik3.csv"</span>)</span>
+<span id="cb16-268"><a href="#cb16-268" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-269"><a href="#cb16-269" aria-hidden="true" tabindex="-1"></a><span class="co"># wczytanie plików do zmiennej wynik</span></span>
+<span id="cb16-270"><a href="#cb16-270" aria-hidden="true" tabindex="-1"></a>wynik <span class="ot">&lt;-</span> <span class="fu">map_dfr</span>(pliki[<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>], wczytaj_plik)</span>
+<span id="cb16-271"><a href="#cb16-271" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb16-272"><a href="#cb16-272" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-273"><a href="#cb16-273" aria-hidden="true" tabindex="-1"></a>**Wyświetlenie wyniku:**</span>
+<span id="cb16-276"><a href="#cb16-276" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb16-277"><a href="#cb16-277" aria-hidden="true" tabindex="-1"></a>wynik</span>
+<span id="cb16-278"><a href="#cb16-278" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb16-279"><a href="#cb16-279" aria-hidden="true" tabindex="-1"></a>***</span>
+<span id="cb16-280"><a href="#cb16-280" aria-hidden="true" tabindex="-1"></a>Jak widać został zwrócony obiekt tibble składający się z 3 stworzonych przez nas plików.</span>
+<span id="cb16-281"><a href="#cb16-281" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-282"><a href="#cb16-282" aria-hidden="true" tabindex="-1"></a><span class="fu">## ggplot2</span></span>
+<span id="cb16-283"><a href="#cb16-283" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-284"><a href="#cb16-284" aria-hidden="true" tabindex="-1"></a>W tym podrozdziale zaprezentuję 2 wykresy stworzone przy pomocy biblioteki <span class="in">`ggplot2`</span> oraz ich interpretację.</span>
+<span id="cb16-285"><a href="#cb16-285" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-286"><a href="#cb16-286" aria-hidden="true" tabindex="-1"></a>::: panel-tabset</span>
+<span id="cb16-287"><a href="#cb16-287" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-288"><a href="#cb16-288" aria-hidden="true" tabindex="-1"></a><span class="fu">## Wykres 1</span></span>
+<span id="cb16-289"><a href="#cb16-289" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-290"><a href="#cb16-290" aria-hidden="true" tabindex="-1"></a>**Kod:**</span>
+<span id="cb16-293"><a href="#cb16-293" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb16-294"><a href="#cb16-294" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
+<span id="cb16-295"><a href="#cb16-295" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-296"><a href="#cb16-296" aria-hidden="true" tabindex="-1"></a>styl <span class="ot">&lt;-</span> <span class="fu">theme</span>(</span>
+<span id="cb16-297"><a href="#cb16-297" aria-hidden="true" tabindex="-1"></a>  <span class="at">legend.position =</span> <span class="st">"top"</span>,</span>
+<span id="cb16-298"><a href="#cb16-298" aria-hidden="true" tabindex="-1"></a>  <span class="at">legend.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"cornsilk1"</span>),</span>
+<span id="cb16-299"><a href="#cb16-299" aria-hidden="true" tabindex="-1"></a>  <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">hjust =</span> <span class="fl">0.5</span>),</span>
+<span id="cb16-300"><a href="#cb16-300" aria-hidden="true" tabindex="-1"></a>  <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">hjust =</span> <span class="fl">0.5</span>),</span>
+<span id="cb16-301"><a href="#cb16-301" aria-hidden="true" tabindex="-1"></a>  <span class="at">plot.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"cornsilk1"</span>, <span class="at">color =</span> <span class="st">"cornsilk4"</span>),</span>
+<span id="cb16-302"><a href="#cb16-302" aria-hidden="true" tabindex="-1"></a>  <span class="at">panel.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"cornsilk2"</span>),</span>
+<span id="cb16-303"><a href="#cb16-303" aria-hidden="true" tabindex="-1"></a>  <span class="at">panel.grid.major =</span> <span class="fu">element_line</span>(<span class="at">size =</span> <span class="dv">1</span>)</span>
+<span id="cb16-304"><a href="#cb16-304" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb16-305"><a href="#cb16-305" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-306"><a href="#cb16-306" aria-hidden="true" tabindex="-1"></a>w1 <span class="ot">&lt;-</span> dane <span class="sc">|&gt;</span> <span class="fu">ggplot</span>(<span class="fu">aes</span>(Rank, <span class="st">`</span><span class="at">GNI - 2021</span><span class="st">`</span>, <span class="at">color =</span> Continent)) <span class="sc">+</span></span>
+<span id="cb16-307"><a href="#cb16-307" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">position =</span> <span class="fu">position_dodge</span>(<span class="at">width =</span> <span class="fl">0.5</span>), <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb16-308"><a href="#cb16-308" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb16-309"><a href="#cb16-309" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Wykres zlezności między rankingiem a GNI"</span>,</span>
+<span id="cb16-310"><a href="#cb16-310" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Wykres 1"</span>,</span>
+<span id="cb16-311"><a href="#cb16-311" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Ranking"</span>,</span>
+<span id="cb16-312"><a href="#cb16-312" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"GNI - 2021"</span></span>
+<span id="cb16-313"><a href="#cb16-313" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb16-314"><a href="#cb16-314" aria-hidden="true" tabindex="-1"></a>  styl <span class="sc">+</span></span>
+<span id="cb16-315"><a href="#cb16-315" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span>comma)</span>
+<span id="cb16-316"><a href="#cb16-316" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb16-317"><a href="#cb16-317" aria-hidden="true" tabindex="-1"></a>**Wykres**</span>
+<span id="cb16-320"><a href="#cb16-320" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb16-321"><a href="#cb16-321" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb16-322"><a href="#cb16-322" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
+<span id="cb16-323"><a href="#cb16-323" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-324"><a href="#cb16-324" aria-hidden="true" tabindex="-1"></a>w1</span>
+<span id="cb16-325"><a href="#cb16-325" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb16-326"><a href="#cb16-326" aria-hidden="true" tabindex="-1"></a>**Interpretacja:**</span>
+<span id="cb16-327"><a href="#cb16-327" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-328"><a href="#cb16-328" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Wykres ten przedstawia punktowe dane, gdzie każdy punkt reprezentuje kraj.</span>
+<span id="cb16-329"><a href="#cb16-329" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Punkty są ułożone na osi X zgodnie z reprezentowanym przez nie rankingiem, a na osi Y znajduje się wartość GNI - 2021 (dochód narodowy brutto)</span>
+<span id="cb16-330"><a href="#cb16-330" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Możemy zauważyc, czy istnieje jakaś widoczna zależność między rankingiem a GNI dla różnych krajów i kontynentów</span>
+<span id="cb16-331"><a href="#cb16-331" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-332"><a href="#cb16-332" aria-hidden="true" tabindex="-1"></a><span class="fu">## Wykres 2</span></span>
+<span id="cb16-333"><a href="#cb16-333" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-334"><a href="#cb16-334" aria-hidden="true" tabindex="-1"></a>**Kod:**</span>
+<span id="cb16-335"><a href="#cb16-335" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, fig.height=8}</span></span>
+<span id="cb16-336"><a href="#cb16-336" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
+<span id="cb16-337"><a href="#cb16-337" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-338"><a href="#cb16-338" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-339"><a href="#cb16-339" aria-hidden="true" tabindex="-1"></a>styl <span class="ot">&lt;-</span> <span class="fu">theme</span>(</span>
+<span id="cb16-340"><a href="#cb16-340" aria-hidden="true" tabindex="-1"></a>  <span class="at">legend.position =</span> <span class="st">"none"</span>,</span>
+<span id="cb16-341"><a href="#cb16-341" aria-hidden="true" tabindex="-1"></a>  <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">hjust =</span> <span class="fl">0.5</span>),</span>
+<span id="cb16-342"><a href="#cb16-342" aria-hidden="true" tabindex="-1"></a>  <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">hjust =</span> <span class="fl">0.5</span>),</span>
+<span id="cb16-343"><a href="#cb16-343" aria-hidden="true" tabindex="-1"></a>  <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>),</span>
+<span id="cb16-344"><a href="#cb16-344" aria-hidden="true" tabindex="-1"></a>  <span class="at">panel.grid.major.y =</span> <span class="fu">element_line</span>(</span>
+<span id="cb16-345"><a href="#cb16-345" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"gray"</span>,</span>
+<span id="cb16-346"><a href="#cb16-346" aria-hidden="true" tabindex="-1"></a>    <span class="at">linetype =</span> <span class="st">"dashed"</span>,</span>
+<span id="cb16-347"><a href="#cb16-347" aria-hidden="true" tabindex="-1"></a>    <span class="at">size =</span> <span class="fl">0.5</span></span>
+<span id="cb16-348"><a href="#cb16-348" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb16-349"><a href="#cb16-349" aria-hidden="true" tabindex="-1"></a>  <span class="at">panel.grid.minor.y =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb16-350"><a href="#cb16-350" aria-hidden="true" tabindex="-1"></a>  <span class="at">panel.grid.major.x =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb16-351"><a href="#cb16-351" aria-hidden="true" tabindex="-1"></a>  <span class="at">panel.grid.minor.x =</span> <span class="fu">element_blank</span>()</span>
+<span id="cb16-352"><a href="#cb16-352" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb16-353"><a href="#cb16-353" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-354"><a href="#cb16-354" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span></span>
+<span id="cb16-355"><a href="#cb16-355" aria-hidden="true" tabindex="-1"></a>  dane <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="st">`</span><span class="at">Population - 2023</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">as.integer</span>(<span class="st">`</span><span class="at">Population - 2023</span><span class="st">`</span>)) <span class="sc">|&gt;</span> <span class="fu">group_by</span>(Continent) <span class="sc">|&gt;</span> <span class="fu">summarise</span>(<span class="at">liczba =</span> <span class="fu">sum</span>(<span class="st">`</span><span class="at">Population - 2023</span><span class="st">`</span>))</span>
+<span id="cb16-356"><a href="#cb16-356" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-357"><a href="#cb16-357" aria-hidden="true" tabindex="-1"></a>w2 <span class="ot">&lt;-</span></span>
+<span id="cb16-358"><a href="#cb16-358" aria-hidden="true" tabindex="-1"></a>  d <span class="sc">|&gt;</span> <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> Continent, <span class="at">y =</span> liczba, <span class="at">fill =</span> Continent)) <span class="sc">+</span></span>
+<span id="cb16-359"><a href="#cb16-359" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
+<span id="cb16-360"><a href="#cb16-360" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> liczba), <span class="at">vjust =</span> <span class="sc">-</span><span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb16-361"><a href="#cb16-361" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">paste0</span>(<span class="fu">round</span>(liczba <span class="sc">/</span> <span class="fu">sum</span>(d<span class="sc">$</span>liczba) <span class="sc">*</span> <span class="dv">100</span>, <span class="dv">1</span>), <span class="st">"%"</span>)), <span class="at">vjust =</span> <span class="fl">1.5</span>) <span class="sc">+</span></span>
+<span id="cb16-362"><a href="#cb16-362" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb16-363"><a href="#cb16-363" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Wykres liczby ludności na kontynentach"</span>,</span>
+<span id="cb16-364"><a href="#cb16-364" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Wykres 2"</span>,</span>
+<span id="cb16-365"><a href="#cb16-365" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Kontynenty"</span>,</span>
+<span id="cb16-366"><a href="#cb16-366" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Liczba ludności"</span></span>
+<span id="cb16-367"><a href="#cb16-367" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb16-368"><a href="#cb16-368" aria-hidden="true" tabindex="-1"></a>  styl <span class="sc">+</span></span>
+<span id="cb16-369"><a href="#cb16-369" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_log10</span>() <span class="sc">+</span></span>
+<span id="cb16-370"><a href="#cb16-370" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span>comma)</span>
+<span id="cb16-371"><a href="#cb16-371" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb16-372"><a href="#cb16-372" aria-hidden="true" tabindex="-1"></a>**Wykres:**</span>
+<span id="cb16-375"><a href="#cb16-375" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb16-376"><a href="#cb16-376" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb16-377"><a href="#cb16-377" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
+<span id="cb16-378"><a href="#cb16-378" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-379"><a href="#cb16-379" aria-hidden="true" tabindex="-1"></a>w2</span>
+<span id="cb16-380"><a href="#cb16-380" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb16-381"><a href="#cb16-381" aria-hidden="true" tabindex="-1"></a>**Interpretacja:**</span>
+<span id="cb16-382"><a href="#cb16-382" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-383"><a href="#cb16-383" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Wykres ten przedstawia liczbę ludności na każdym z kontynentów w formie kolumn.</span>
+<span id="cb16-384"><a href="#cb16-384" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Kolumny są pokolorowane zgodnie z kontynentem, co ułatwia porównywanie między nimi.</span>
+<span id="cb16-385"><a href="#cb16-385" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Dodatkowo na każdej kolumnie umieszczono etykiety z liczbą ludności i procentowym udziałem danej populacji w ogólnej liczbie ludności. Dzięki temu można dokladnie zobaczyć wartość reprezentującą ludność na danym kontynencie oraz procent populacji na tle światowym.</span>
+<span id="cb16-386"><a href="#cb16-386" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb16-387"><a href="#cb16-387" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-388"><a href="#cb16-388" aria-hidden="true" tabindex="-1"></a><span class="fu">## Plotly</span></span>
+<span id="cb16-389"><a href="#cb16-389" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-390"><a href="#cb16-390" aria-hidden="true" tabindex="-1"></a>Poniżej znajdują się udoskonalone wykresy które mogliśmy zobaczyć w poprzednim akapcie. Wykresy te posiadają jeszcze większą funkcjonalność oraz są ineraktywne. Do stworzenia tych wykresów zastosowałem bibliotekę <span class="in">`plotly`</span>, która jest potężnym narzędziem umożliwiającym interaktywną wizualizację danych. Utworzenie takiego wykresu jest wbrew pozorom bardzo proste.</span>
+<span id="cb16-391"><a href="#cb16-391" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-392"><a href="#cb16-392" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-393"><a href="#cb16-393" aria-hidden="true" tabindex="-1"></a>::: panel-tabset</span>
+<span id="cb16-394"><a href="#cb16-394" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb16-395"><a href="#cb16-395" aria-hidden="true" tabindex="-1"></a><span class="fu">## Wykres 1</span></span>
+<span id="cb16-396"><a href="#cb16-396" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-397"><a href="#cb16-397" aria-hidden="true" tabindex="-1"></a>Aby stworzyć wykres 1 wystarczy użyć polecenia <span class="in">`plot_ly()`</span>, a następnie w środku podać co ma się znajdować na osi X, a co na osi Y. Jeśli chcemy aby każdy punkt był pokolorowany zgodnie z jakąś legendą wystarczy po przecinku dopisać <span class="in">`color = ...`</span>, a w miejscu kropek wybieramy zgodnie z czym punkty mają być pokolorowane. Aby dodać tytuł, nazwy osi, itp., np. po operatorze <span class="in">`|&gt;`</span> wpisujemy <span class="in">`layout(...)`</span>, a w środku odpowiednie zmienne i wartości. </span>
+<span id="cb16-398"><a href="#cb16-398" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-399"><a href="#cb16-399" aria-hidden="true" tabindex="-1"></a>**Kod:**</span>
+<span id="cb16-402"><a href="#cb16-402" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb16-403"><a href="#cb16-403" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
+<span id="cb16-404"><a href="#cb16-404" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-405"><a href="#cb16-405" aria-hidden="true" tabindex="-1"></a>fig <span class="ot">&lt;-</span> dane <span class="sc">|&gt;</span> <span class="fu">plot_ly</span>(<span class="at">x =</span> <span class="sc">~</span>Rank, <span class="at">y =</span> <span class="sc">~</span><span class="st">`</span><span class="at">GNI - 2021</span><span class="st">`</span>, <span class="at">color =</span> <span class="sc">~</span>Continent) <span class="sc">|&gt;</span> <span class="fu">layout</span>(</span>
+<span id="cb16-406"><a href="#cb16-406" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">'Wykres zlezności między rankingiem a GNI'</span>,</span>
+<span id="cb16-407"><a href="#cb16-407" aria-hidden="true" tabindex="-1"></a>  <span class="at">xaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">'Ranking'</span>),</span>
+<span id="cb16-408"><a href="#cb16-408" aria-hidden="true" tabindex="-1"></a>  <span class="at">yaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">'GNI- 2021'</span>)</span>
+<span id="cb16-409"><a href="#cb16-409" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb16-410"><a href="#cb16-410" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb16-411"><a href="#cb16-411" aria-hidden="true" tabindex="-1"></a>**Wykres**</span>
+<span id="cb16-414"><a href="#cb16-414" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb16-415"><a href="#cb16-415" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb16-416"><a href="#cb16-416" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
+<span id="cb16-417"><a href="#cb16-417" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-418"><a href="#cb16-418" aria-hidden="true" tabindex="-1"></a>fig</span>
+<span id="cb16-419"><a href="#cb16-419" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb16-420"><a href="#cb16-420" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-421"><a href="#cb16-421" aria-hidden="true" tabindex="-1"></a><span class="fu">## Wykres 2</span></span>
+<span id="cb16-422"><a href="#cb16-422" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-423"><a href="#cb16-423" aria-hidden="true" tabindex="-1"></a>Aby stworzyć wykres 2 oprócz wykonania takich samych czynności jak w tworzeniu wykresu 1, trzeba w nawiasach polecenia <span class="in">`plot_ly()`</span> dodać <span class="in">`typ = "bar"`</span>, aby stworzyć wykres kolumnowy. Następnie po operatorze <span class="in">`|&gt;`</span> należy wpisać <span class="in">`add_text()`</span>, dzięki temu będziemy miei możliwość dodać tekst na wykresie, w nawiasach tego polecenia mamy wiele możliwych opcji stylistycnzych m.in <span class="in">`position`</span>, <span class="in">`text`</span> lub <span class="in">`textposition`</span>. </span>
+<span id="cb16-424"><a href="#cb16-424" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-425"><a href="#cb16-425" aria-hidden="true" tabindex="-1"></a>**Kod:**</span>
+<span id="cb16-428"><a href="#cb16-428" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb16-429"><a href="#cb16-429" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
+<span id="cb16-430"><a href="#cb16-430" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-431"><a href="#cb16-431" aria-hidden="true" tabindex="-1"></a>fig2 <span class="ot">&lt;-</span> d <span class="sc">|&gt;</span> <span class="fu">plot_ly</span>(<span class="at">x =</span> <span class="sc">~</span>Continent, <span class="at">y =</span> <span class="sc">~</span>liczba, <span class="at">color =</span> <span class="sc">~</span>Continent, <span class="at">type =</span> <span class="st">"bar"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb16-432"><a href="#cb16-432" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_text</span>(</span>
+<span id="cb16-433"><a href="#cb16-433" aria-hidden="true" tabindex="-1"></a>    <span class="at">text =</span> <span class="sc">~</span><span class="fu">paste0</span>(<span class="fu">round</span>(liczba <span class="sc">/</span> <span class="fu">sum</span>(d<span class="sc">$</span>liczba) <span class="sc">*</span> <span class="dv">100</span>, <span class="dv">1</span>), <span class="st">"%"</span>),</span>
+<span id="cb16-434"><a href="#cb16-434" aria-hidden="true" tabindex="-1"></a>    <span class="at">position =</span> <span class="st">"inside"</span>,</span>
+<span id="cb16-435"><a href="#cb16-435" aria-hidden="true" tabindex="-1"></a>    <span class="at">textposition =</span> <span class="st">"auto"</span>,</span>
+<span id="cb16-436"><a href="#cb16-436" aria-hidden="true" tabindex="-1"></a>    <span class="at">hoverinfo =</span> <span class="st">"text"</span>,</span>
+<span id="cb16-437"><a href="#cb16-437" aria-hidden="true" tabindex="-1"></a>    <span class="at">textfont =</span> <span class="fu">list</span>(<span class="at">color =</span> <span class="st">"black"</span>)</span>
+<span id="cb16-438"><a href="#cb16-438" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb16-439"><a href="#cb16-439" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(</span>
+<span id="cb16-440"><a href="#cb16-440" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Wykres liczby ludności na kontynentach"</span>,</span>
+<span id="cb16-441"><a href="#cb16-441" aria-hidden="true" tabindex="-1"></a>    <span class="at">xaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">"Kontynenty"</span>),</span>
+<span id="cb16-442"><a href="#cb16-442" aria-hidden="true" tabindex="-1"></a>    <span class="at">yaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">"Liczba ludności"</span>,</span>
+<span id="cb16-443"><a href="#cb16-443" aria-hidden="true" tabindex="-1"></a>                 <span class="at">tickformat =</span> <span class="st">",d"</span>),</span>
+<span id="cb16-444"><a href="#cb16-444" aria-hidden="true" tabindex="-1"></a>    <span class="at">showlegend =</span> <span class="cn">FALSE</span></span>
+<span id="cb16-445"><a href="#cb16-445" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb16-446"><a href="#cb16-446" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb16-447"><a href="#cb16-447" aria-hidden="true" tabindex="-1"></a>**Wykres:**</span>
+<span id="cb16-450"><a href="#cb16-450" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb16-451"><a href="#cb16-451" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb16-452"><a href="#cb16-452" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
+<span id="cb16-453"><a href="#cb16-453" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-454"><a href="#cb16-454" aria-hidden="true" tabindex="-1"></a>fig2</span>
+<span id="cb16-455"><a href="#cb16-455" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb16-456"><a href="#cb16-456" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-457"><a href="#cb16-457" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb16-458"><a href="#cb16-458" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-459"><a href="#cb16-459" aria-hidden="true" tabindex="-1"></a><span class="fu">## Interaktywna mapa </span></span>
+<span id="cb16-460"><a href="#cb16-460" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-461"><a href="#cb16-461" aria-hidden="true" tabindex="-1"></a>Aby stworzyć interaktywną mapę użyłem biblioteki <span class="in">`leaflet`</span>. Służy ona do tworzenia interaktywnych map, jest łatwa w użyciu. </span>
+<span id="cb16-462"><a href="#cb16-462" aria-hidden="true" tabindex="-1"></a>Poniżej znajduję się mapa na której można sprawdzić populację wybranych przezemnie kilku krajów.</span>
+<span id="cb16-463"><a href="#cb16-463" aria-hidden="true" tabindex="-1"></a>W tym celu skróciłem dane do 6 krajów za pomocą polecenia <span class="in">`head(dane)`</span> oraz dodałem wyszukane z internetu współrzędne geograficzne (szerokość i długość) do każdego kraju dodając poprostu dwie kolumny do skróconych danych. Następnie tak przekształcone dane zostały użyte w naszej mapce.  </span>
+<span id="cb16-464"><a href="#cb16-464" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-465"><a href="#cb16-465" aria-hidden="true" tabindex="-1"></a>**Kod:**</span>
+<span id="cb16-468"><a href="#cb16-468" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb16-469"><a href="#cb16-469" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
+<span id="cb16-470"><a href="#cb16-470" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-471"><a href="#cb16-471" aria-hidden="true" tabindex="-1"></a>dane_mapa <span class="ot">&lt;-</span></span>
+<span id="cb16-472"><a href="#cb16-472" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(dane) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(</span>
+<span id="cb16-473"><a href="#cb16-473" aria-hidden="true" tabindex="-1"></a>    <span class="at">szer =</span> <span class="fu">c</span>(<span class="fl">35.6895</span>, <span class="fl">25.0320</span>, <span class="fl">1.3521</span>, <span class="fl">22.3193</span>, <span class="fl">39.9042</span>, <span class="fl">37.5665</span>), </span>
+<span id="cb16-474"><a href="#cb16-474" aria-hidden="true" tabindex="-1"></a>    <span class="at">dl =</span> <span class="fu">c</span>(<span class="fl">139.6917</span>, <span class="fl">121.5654</span>, <span class="fl">103.8198</span>, <span class="fl">114.1694</span>, <span class="fl">116.4074</span>, <span class="fl">126.9780</span>)</span>
+<span id="cb16-475"><a href="#cb16-475" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> <span class="fu">select</span>(Country, <span class="st">`</span><span class="at">Population - 2023</span><span class="st">`</span>, szer, dl) </span>
+<span id="cb16-476"><a href="#cb16-476" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-477"><a href="#cb16-477" aria-hidden="true" tabindex="-1"></a>mapa <span class="ot">&lt;-</span> <span class="fu">leaflet</span>(dane_mapa) <span class="sc">|&gt;</span></span>
+<span id="cb16-478"><a href="#cb16-478" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>() <span class="sc">|&gt;</span></span>
+<span id="cb16-479"><a href="#cb16-479" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addCircleMarkers</span>(</span>
+<span id="cb16-480"><a href="#cb16-480" aria-hidden="true" tabindex="-1"></a>    <span class="sc">~</span> dl,</span>
+<span id="cb16-481"><a href="#cb16-481" aria-hidden="true" tabindex="-1"></a>    <span class="sc">~</span> szer,</span>
+<span id="cb16-482"><a href="#cb16-482" aria-hidden="true" tabindex="-1"></a>    <span class="at">radius =</span> <span class="dv">20</span>,</span>
+<span id="cb16-483"><a href="#cb16-483" aria-hidden="true" tabindex="-1"></a>    <span class="at">fillOpacity =</span> <span class="fl">0.5</span>,</span>
+<span id="cb16-484"><a href="#cb16-484" aria-hidden="true" tabindex="-1"></a>    <span class="at">popup =</span> <span class="sc">~</span> <span class="fu">paste</span>(Country, <span class="st">"| Population:"</span>, <span class="st">`</span><span class="at">Population - 2023</span><span class="st">`</span>)</span>
+<span id="cb16-485"><a href="#cb16-485" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb16-486"><a href="#cb16-486" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb16-487"><a href="#cb16-487" aria-hidden="true" tabindex="-1"></a>**Mapa:**</span>
+<span id="cb16-490"><a href="#cb16-490" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb16-491"><a href="#cb16-491" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb16-492"><a href="#cb16-492" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
+<span id="cb16-493"><a href="#cb16-493" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-494"><a href="#cb16-494" aria-hidden="true" tabindex="-1"></a>mapa</span>
+<span id="cb16-495"><a href="#cb16-495" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+</code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+<script src="index_files/libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

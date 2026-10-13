@@ -1,0 +1,454 @@
+---
+title: "Sprawozdanie"
+subtitle: "Grupa 1"
+date: "2024-01-10"
+author: "Radosław Górecki"
+abstract-title: "Streszczenie"
+abstract: "<span style='font-size: 15px;'>W tej pracy prezentuję analizę danych dotyczących średniego ilorazu inteligencji (IQ) mieszkańców różnych krajów na świecie. Dane zostały pozyskane z serwisu Kaggle i zawierają informacje o niektóych czynnikach mogących wpływać na średnie IQ w danym państwie. Przy użyciu języka R i pakietów takich jak m.in. tidyverse, ggplot2, plotly oraz leaflet, przeprowadziłem analizę i wizualizację danych. Opracowane zostały podstawowe oraz interaktywne wykresy. Dodatkowo, przedstawiam stworzoną funkcję obliczającą wskaźnik edukacyjno-ekonomiczny oraz interaktywną mapę z oznaczeniem populacji wybranych krajów. Praca zawiera również wnioski i interpretacje uzyskanych rezultatów.</span>"
+lang: pl
+format: 
+  html:
+    toc: true
+    toc-depth: 2
+    toc-title: "Spis treści"
+    number-sections: true
+    smooth-scroll: true
+    code-tools: true
+    code-overflow: scroll
+    theme: 
+      light: minty
+editor_options: 
+  chunk_output_type: console
+---
+# Wstęp
+
+Witam, nazywam się Radosław Górecki, jestem studentem pierwszego roku z pasją do programowania. Ostatnio zainteresowałem się analizą danych dotyczących średniego ilorazu inteligencji (IQ) mieszkańców różnych krajów. Wykorzystałem dane z Kaggle oraz języka R, aby przeprowadzić analizę i stworzyć interaktywne wizualizacje. Zapraszam do odkrywania wniosków dotyczących czynników wpływających na średni IQ i innych ciekawostek, które udało mi się odkryć w trakcie pracy.
+
+# Zainteresowania
+
+Od jakiegoś czasu interesuję się programowaniem. Próbowałem sobie programować w różnych językach takich jak: C++, JavaScript, Python, HTML. Jednak najbardziej spodobało mi się prograowanie w Pythonie, dlatego, że można tam pisać bardzo prosty i czytelny kod. Niedawno zainteresowałem się machine learningiem gdzie wydaje mi się użytecznymi językami mogą być python oraz R. Jeszcze nie do końca wybrałem co chcę w życiu robić, narazie testuje sobie różne ścieżki kariery programisty. Tak jak już wyżej pisałem próbowałem sobie pisać w różnych językach, napisałem różne rzeczy takie jak: strony internetowe, grę komputerową, grę internetową, proste aplikacje w konsoli. Teraz na celowniku uczenie maszynowe :) 
+
+# Zawartość
+
+
+```{r filename="Używane Pakiety"}
+#| output: false
+
+library(tidyverse)
+library(dplyr)
+library(DT)
+library(tibble)
+library(ggplot2)
+library(readr)
+library(plotly)
+library(leaflet)
+library(scales)
+```
+
+## Pozyskanie danych
+
+Dane zostały pobrane z popularnej strony: [www.kaggle.com](https://www.kaggle.com).
+Do zaimportowania danych zastosowałem polecenie `read_csv()`:
+```{r}
+#| output: false
+dane <- read_csv(file="dane/avgIQpercountry.csv")
+```
+
+Polecenia mogłem używać po wczytaniu biblioteki `tidyverse`, w której mieszczą się pakiety języka R przeznaczone do nauki o danych.
+
+## Opis danych 
+
+Zestaw danych nosi nazwę: ***Average global IQ per country with other stats***.
+
+Zawiera on średnie wyniki IQ (ilorazów inteligencji) mieszkańców danego kraju z uwzględnieniem mających na to wpływ niektórych czynników. 
+
+Możesz pobrać plik z danymi tutaj: [Kliknij](dane/avgIQpercountry.csv).
+
+**Meta Dane:**
+
+|           Zmienna               |                                     Opis                                  |
+|:-------------------------------:|:-------------------------------------------------------------------------:|
+| Rank                            | Ranking danego kraju bazujący na średnim IQ                               |
+| Country                         | Nazwa kraju                                                               |
+| Average IQ                      | Średni wynik IQ                                                           |
+| Continent                       | Kontynent na którym leży dany kraj                                        |
+| Literacy Rate                   | Analfabetyzm (wzór: Literaci/Całkowita populacja)                         | 
+| Nobel Prices                    | Ilość zdobytych nagród Nobla                                              |
+| HDI 2021                        | Wskaźnik Rozwoju Społecznego w 2021 roku                                  |
+| Mean years of schoolling - 2021 | Średnia liczba lat, w których każdy uczeń uczęszcza do szkoły w 2021 roku |
+| GNI - 2021                      | Indeks Krajowy Brutto w 2021 roku                                         |
+| Population - 2023               | Populacja w danych kraju w 2023 roku                                      |
+
+## Przetwarzanie Potokowe i interaktywna tabela
+
+Korzystając z możliwości `wrappingu` wykonalem podsumowanie danych w formie interaktywnej tabeli dla Europy, Azji oraz Afryki. W tym celu m.in stworzyłem nową kolumnę w której zawiera się podział na grupy bazując na średnim ilorazie inteligencji.
+
+::: panel-tabset
+
+## Europa
+
+**Skrypt:**
+
+```{r}
+Europe <- dane |> 
+  filter(Continent == "Europe") |>
+  select(Country, `Average IQ`, `Nobel Prices`, `HDI (2021)`) |>
+  mutate(  
+    `IQ Classification` = cut(`Average IQ`, breaks = c(0, 80, 90, 100, +Inf), labels = c("Very Low Average", "Low Average", "Average", "High Average"))
+  ) |>
+  group_by(`IQ Classification`) |>
+  summarise(
+    Mean_IQ = round(mean(`Average IQ`, na.rm = TRUE), 2),
+    Total_Nobel_Prizes = sum(`Nobel Prices`, na.rm = TRUE),
+    Mean_HDI = round(mean(`HDI (2021)`, na.rm = TRUE), 2)
+  )
+```
+
+**Tabela:**
+
+```{r}
+#| echo: false
+datatable(Europe)
+```
+
+**Wnioski:**
+
+Powyższa tabela zawiera klasyfikacje IQ krajów Europy podzieloną na grupy, a także wybrane niektóre czynniki. Można z niej wywnioskowować, że ***liczba zdobytych nagród Nobla*** ma mały wpływ na wyniki IQ, natomiast ***średni wskaźnik rozwoju społecznego*** ma już dużo większy wpływ. 
+
+## Azja
+
+**Skrypt:**
+
+```{r}
+Asia <- dane |> 
+  filter(Continent == "Asia") |>
+  select(Country, `Average IQ`, `Nobel Prices`, `HDI (2021)`) |>
+  mutate(  
+    `IQ Classification` = cut(`Average IQ`, breaks = c(0, 80, 90, 100, +Inf), labels = c("Very Low Average", "Low Average", "Average", "High Average"))
+  ) |>
+  group_by(`IQ Classification`) |>
+  summarise(
+    Mean_IQ = round(mean(`Average IQ`, na.rm = TRUE), 2),
+    Total_Nobel_Prizes = sum(`Nobel Prices`, na.rm = TRUE),
+    Mean_HDI = round(mean(`HDI (2021)`, na.rm = TRUE), 2)
+  )
+```
+
+**Tabela:**
+
+```{r}
+#| echo: false
+datatable(Asia)
+```
+
+**Wnioski:**
+
+Powyższa tabela zawiera klasyfikacje IQ krajów Azji podzieloną na grupy, a także wybrane niektóre czynniki. Tutaj można postawić inne wnioski niż w poprzedniej tabeli. Widać wyraźnie, że klasyfikacja IQ *"Low Average"* posiada większy ***średni wskaźnik rozwoju społecznego*** niż klasyfikacja *"Average"*, a więc ten czynnik nie jest decydujący we wpływaniu na ostateczny średni wynik IQ. Natomiast ***liczba nagród nobla*** nadal wydaje się nie mieć za dużego wpływu tak samo jak w poprzednim przykładzie.
+
+## Afryka
+
+**Skrypt:**
+
+```{r}
+Africa <- dane |> 
+  filter(Continent == "Africa") |>
+  select(Country, `Average IQ`, `Nobel Prices`, `HDI (2021)`) |>
+  mutate(  
+    `IQ Classification` = cut(`Average IQ`, breaks = c(0, 80, 90, 100, +Inf), labels = c("Very Low Average", "Low Average", "Average", "High Average"))
+  ) |>
+  group_by(`IQ Classification`) |>
+  summarise(
+    Mean_IQ = round(mean(`Average IQ`, na.rm = TRUE), 2),
+    Total_Nobel_Prizes = sum(`Nobel Prices`, na.rm = TRUE),
+    Mean_HDI = round(mean(`HDI (2021)`, na.rm = TRUE), 2)
+  )
+```
+
+**Tabela:**
+
+```{r}
+#| echo: false
+datatable(Africa)
+```
+
+**Wnioski:**
+
+Powyższa tabela zawiera klasyfikacje IQ krajów Afryki podzieloną na grupy, a także wybrane niektóre czynniki. Można z niej wywnioskowować, że ***liczba zdobytych nagród Nobla*** ma mały wpływ na wyniki IQ, natomiast ***średni wskaźnik rozwoju społecznego*** ma duże znaczenie. Wnioski bardzo podobne jak w przykładzie Europy. 
+
+:::
+
+## Funkcja
+
+Napisana funkcja oblicza ***Wskaźnik Edukacyjno-Ekonomiczny***.
+
+**Kod:**
+```{r}
+funkcja <- function(data, col_schooling, col_GNI, col_literacy){
+  edu_econ_index <- data[[col_schooling]] * data[[col_GNI]] * data[[col_literacy]]
+  data <- mutate(data, edu_econ_index)
+  plot <- ggplot(data, aes(x=Rank, y=edu_econ_index)) +
+    geom_bar(stat = "identity", fill = "skyblue") +
+    labs(title = "Wskaźnik Edukacyjno-Ekonomiczny", x = "Ranking Kraju", y = "Wskaźnik") +
+    theme_minimal()
+  
+  return(plot)
+}
+```
+
+```{r}
+#| warning: false
+#| eval: false
+
+daneT <- dane |> as_tibble()
+funkcja(daneT, "Mean years of schooling - 2021", "GNI - 2021", "Literacy Rate")
+```
+**Rezultat:**
+```{r}
+#| warning: false
+#| echo: false
+
+daneT <- dane |> as_tibble()
+funkcja(daneT, "Mean years of schooling - 2021", "GNI - 2021", "Literacy Rate")
+```
+ 
+Jak już wyżej napisałem funkcja oblicza Wskaźnik Edukacyjno-Ekonomiczny, wykorzystując wzór: $$W = x * y * z$$  
+
+Gdzie: 
+
+  W - Wskaźnik edukacyjno-ekonomiczny
+
+  x - średnia długość nauki
+  
+  y - PKB na mieszkańca
+  
+  z - wskaźnik piśmienności
+  
+## Pętla
+Poniższy kod tworzy 3 przykładowe pliki csv, następnie wczytuje stworzone pliki i łączy je ze sobą w całość jako tibble. W skrypcie została użyta funkcja `map_dfr()`, zwraca ona ramkę danych stworzoną przez połączenie wierszy.
+
+**Skrypt:**
+```{r}
+#| output: false
+
+# Tworzenie przykładowych 3 plików
+write_csv(data.frame(id = c(1, 2, 3), name = c("Marek", "Mateusz", "Janek"), iq = sample(30:200, 3)), "plik1.csv")
+write_csv(data.frame(id = 4, name = "Zbyszek", iq = sample(30:200, 1)), "plik2.csv")
+write_csv(data.frame(id = c(5, 6), name = c("Piotr", "Mariusz"), iq = sample(30:200, 2)), "plik3.csv")
+
+# funckja wczytująca pliki
+wczytaj_plik <- function(sciezka) {
+  read_csv(sciezka) |>
+    as_tibble()
+}
+
+# lista plików do wcyztania
+pliki <- c("plik1.csv", "plik2.csv", "plik3.csv")
+
+# wczytanie plików do zmiennej wynik
+wynik <- map_dfr(pliki[1:3], wczytaj_plik)
+```
+
+**Wyświetlenie wyniku:**
+```{r}
+wynik
+```
+***
+Jak widać został zwrócony obiekt tibble składający się z 3 stworzonych przez nas plików.
+
+## ggplot2
+
+W tym podrozdziale zaprezentuję 2 wykresy stworzone przy pomocy biblioteki `ggplot2` oraz ich interpretację.
+
+::: panel-tabset
+
+## Wykres 1
+
+**Kod:**
+```{r}
+#| warning: false
+
+styl <- theme(
+  legend.position = "top",
+  legend.background = element_rect(fill = "cornsilk1"),
+  plot.title = element_text(hjust = 0.5),
+  plot.subtitle = element_text(hjust = 0.5),
+  plot.background = element_rect(fill = "cornsilk1", color = "cornsilk4"),
+  panel.background = element_rect(fill = "cornsilk2"),
+  panel.grid.major = element_line(size = 1)
+)
+
+w1 <- dane |> ggplot(aes(Rank, `GNI - 2021`, color = Continent)) +
+  geom_point(position = position_dodge(width = 0.5), size = 2) +
+  labs(
+    title = "Wykres zlezności między rankingiem a GNI",
+    subtitle = "Wykres 1",
+    x = "Ranking",
+    y = "GNI - 2021"
+  ) +
+  styl +
+  scale_y_continuous(labels = scales::comma)
+```
+**Wykres**
+```{r}
+#| echo: false
+#| warning: false
+
+w1
+```
+**Interpretacja:**
+
+- Wykres ten przedstawia punktowe dane, gdzie każdy punkt reprezentuje kraj.
+- Punkty są ułożone na osi X zgodnie z reprezentowanym przez nie rankingiem, a na osi Y znajduje się wartość GNI - 2021 (dochód narodowy brutto)
+- Możemy zauważyc, czy istnieje jakaś widoczna zależność między rankingiem a GNI dla różnych krajów i kontynentów
+
+## Wykres 2
+
+**Kod:**
+```{r, fig.height=8}
+#| warning: false
+
+
+styl <- theme(
+  legend.position = "none",
+  plot.title = element_text(hjust = 0.5),
+  plot.subtitle = element_text(hjust = 0.5),
+  axis.text.x = element_text(angle = 45, hjust = 1),
+  panel.grid.major.y = element_line(
+    color = "gray",
+    linetype = "dashed",
+    size = 0.5
+  ),
+  panel.grid.minor.y = element_blank(),
+  panel.grid.major.x = element_blank(),
+  panel.grid.minor.x = element_blank()
+)
+
+d <-
+  dane |> mutate(`Population - 2023` = as.integer(`Population - 2023`)) |> group_by(Continent) |> summarise(liczba = sum(`Population - 2023`))
+
+w2 <-
+  d |> ggplot(aes(x = Continent, y = liczba, fill = Continent)) +
+  geom_col() +
+  geom_text(aes(label = liczba), vjust = -0.5) +
+  geom_text(aes(label = paste0(round(liczba / sum(d$liczba) * 100, 1), "%")), vjust = 1.5) +
+  labs(
+    title = "Wykres liczby ludności na kontynentach",
+    subtitle = "Wykres 2",
+    x = "Kontynenty",
+    y = "Liczba ludności"
+  ) +
+  styl +
+  scale_y_log10() +
+  scale_y_continuous(labels = scales::comma)
+```
+**Wykres:**
+```{r}
+#| echo: false
+#| warning: false
+
+w2
+```
+**Interpretacja:**
+
+- Wykres ten przedstawia liczbę ludności na każdym z kontynentów w formie kolumn.
+- Kolumny są pokolorowane zgodnie z kontynentem, co ułatwia porównywanie między nimi.
+- Dodatkowo na każdej kolumnie umieszczono etykiety z liczbą ludności i procentowym udziałem danej populacji w ogólnej liczbie ludności. Dzięki temu można dokladnie zobaczyć wartość reprezentującą ludność na danym kontynencie oraz procent populacji na tle światowym.
+:::
+
+## Plotly
+
+Poniżej znajdują się udoskonalone wykresy które mogliśmy zobaczyć w poprzednim akapcie. Wykresy te posiadają jeszcze większą funkcjonalność oraz są ineraktywne. Do stworzenia tych wykresów zastosowałem bibliotekę `plotly`, która jest potężnym narzędziem umożliwiającym interaktywną wizualizację danych. Utworzenie takiego wykresu jest wbrew pozorom bardzo proste.
+
+
+::: panel-tabset
+ 
+## Wykres 1
+
+Aby stworzyć wykres 1 wystarczy użyć polecenia `plot_ly()`, a następnie w środku podać co ma się znajdować na osi X, a co na osi Y. Jeśli chcemy aby każdy punkt był pokolorowany zgodnie z jakąś legendą wystarczy po przecinku dopisać `color = ...`, a w miejscu kropek wybieramy zgodnie z czym punkty mają być pokolorowane. Aby dodać tytuł, nazwy osi, itp., np. po operatorze `|>` wpisujemy `layout(...)`, a w środku odpowiednie zmienne i wartości. 
+
+**Kod:**
+```{r}
+#| warning: false
+
+fig <- dane |> plot_ly(x = ~Rank, y = ~`GNI - 2021`, color = ~Continent) |> layout(
+  title = 'Wykres zlezności między rankingiem a GNI',
+  xaxis = list(title = 'Ranking'),
+  yaxis = list(title = 'GNI- 2021')
+)
+```
+**Wykres**
+```{r}
+#| echo: false
+#| warning: false
+
+fig
+```
+
+## Wykres 2
+
+Aby stworzyć wykres 2 oprócz wykonania takich samych czynności jak w tworzeniu wykresu 1, trzeba w nawiasach polecenia `plot_ly()` dodać `typ = "bar"`, aby stworzyć wykres kolumnowy. Następnie po operatorze `|>` należy wpisać `add_text()`, dzięki temu będziemy miei możliwość dodać tekst na wykresie, w nawiasach tego polecenia mamy wiele możliwych opcji stylistycnzych m.in `position`, `text` lub `textposition`. 
+
+**Kod:**
+```{r}
+#| warning: false
+
+fig2 <- d |> plot_ly(x = ~Continent, y = ~liczba, color = ~Continent, type = "bar") |>
+  add_text(
+    text = ~paste0(round(liczba / sum(d$liczba) * 100, 1), "%"),
+    position = "inside",
+    textposition = "auto",
+    hoverinfo = "text",
+    textfont = list(color = "black")
+  ) |>
+  layout(
+    title = "Wykres liczby ludności na kontynentach",
+    xaxis = list(title = "Kontynenty"),
+    yaxis = list(title = "Liczba ludności",
+                 tickformat = ",d"),
+    showlegend = FALSE
+  )
+```
+**Wykres:**
+```{r}
+#| echo: false
+#| warning: false
+
+fig2
+```
+
+:::
+
+## Interaktywna mapa 
+
+Aby stworzyć interaktywną mapę użyłem biblioteki `leaflet`. Służy ona do tworzenia interaktywnych map, jest łatwa w użyciu. 
+Poniżej znajduję się mapa na której można sprawdzić populację wybranych przezemnie kilku krajów.
+W tym celu skróciłem dane do 6 krajów za pomocą polecenia `head(dane)` oraz dodałem wyszukane z internetu współrzędne geograficzne (szerokość i długość) do każdego kraju dodając poprostu dwie kolumny do skróconych danych. Następnie tak przekształcone dane zostały użyte w naszej mapce.  
+
+**Kod:**
+```{r}
+#| warning: false
+
+dane_mapa <-
+  head(dane) |> mutate(
+    szer = c(35.6895, 25.0320, 1.3521, 22.3193, 39.9042, 37.5665), 
+    dl = c(139.6917, 121.5654, 103.8198, 114.1694, 116.4074, 126.9780)
+  ) |> select(Country, `Population - 2023`, szer, dl) 
+
+mapa <- leaflet(dane_mapa) |>
+  addTiles() |>
+  addCircleMarkers(
+    ~ dl,
+    ~ szer,
+    radius = 20,
+    fillOpacity = 0.5,
+    popup = ~ paste(Country, "| Population:", `Population - 2023`)
+  )
+```
+**Mapa:**
+```{r}
+#| echo: false
+#| warning: false
+
+mapa
+```
+

@@ -1,0 +1,17 @@
+# Historia i dane sesji R
+.Rhistory
+.RData
+.Ruserdata
+
+# Pliki środowiska roboczego RStudio
+.Rproj.user/
+
+# Izolowane środowisko renv (trzymamy tylko renv.lock i renv/activate.R, a biblioteki ignorujemy)
+renv/library/
+renv/staging/
+renv/python/
+
+# Pliki systemowe
+.DS_Store
+Thumbs.db
+desktop.ini
